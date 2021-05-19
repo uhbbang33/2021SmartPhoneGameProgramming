@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxh-fM-qX3">
+                                <rect key="frame" x="32" y="194" width="350" height="100"/>
+                                <color key="backgroundColor" red="0.76950214818580864" green="0.53553943334898657" blue="0.23594840744280443" alpha="0.40622280406303146" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0vB-Fa-oDN"/>
+                                    <constraint firstAttribute="width" constant="350" id="j9a-4z-XH4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="말 정보 검색">
+                                    <color key="titleColor" red="0.18299739876973264" green="0.1354180477601015" blue="0.042907615558095774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-hi-1hs">
+                                <rect key="frame" x="32" y="324" width="350" height="100"/>
+                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="C08-qZ-j7q"/>
+                                    <constraint firstAttribute="height" constant="100" id="SqT-bI-JkO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="말 나이 분포 그래프">
+                                    <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsZ-07-wtz">
+                                <rect key="frame" x="32" y="454" width="350" height="100"/>
+                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Dk9-SZ-Q0t"/>
+                                    <constraint firstAttribute="height" constant="100" id="aQ6-wz-KEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="품종별 앨범">
+                                    <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-xk-FaL">
+                                <rect key="frame" x="32" y="584" width="350" height="100"/>
+                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8PJ-eV-nze"/>
+                                    <constraint firstAttribute="width" constant="350" id="Ij5-Dn-VgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="경주마 성적 정보">
+                                    <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FsZ-07-wtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3pm-on-iiz"/>
+                            <constraint firstItem="6YZ-hi-1hs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8lU-ik-BRe"/>
+                            <constraint firstItem="6YZ-hi-1hs" firstAttribute="top" secondItem="wxh-fM-qX3" secondAttribute="bottom" constant="30" id="LAu-9l-tTp"/>
+                            <constraint firstItem="FsZ-07-wtz" firstAttribute="top" secondItem="6YZ-hi-1hs" secondAttribute="bottom" constant="30" id="NHz-Uy-IHg"/>
+                            <constraint firstItem="wxh-fM-qX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QZX-Fu-DMf"/>
+                            <constraint firstItem="cao-xk-FaL" firstAttribute="top" secondItem="FsZ-07-wtz" secondAttribute="bottom" constant="30" id="X22-ep-hZ6"/>
+                            <constraint firstItem="wxh-fM-qX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="dsC-5e-3H6"/>
+                            <constraint firstItem="cao-xk-FaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaU-6B-KTC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="30" y="72"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
