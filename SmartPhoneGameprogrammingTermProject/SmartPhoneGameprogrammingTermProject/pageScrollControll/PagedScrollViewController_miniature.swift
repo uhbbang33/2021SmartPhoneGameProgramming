@@ -1,15 +1,16 @@
 //
-//  PagedScrollViewController.swift
-//  ScrollView
+//  PagedScrollViewController_miniature.swift
+//  SmartPhoneGameprogrammingTermProject
 //
-//  Created by kpugame on 2021/04/05.
+//  Created by kpugame on 2021/05/19.
 //
 
 import UIKit
 
-class PagedScrollViewController: UIViewController, UIScrollViewDelegate {
-    @IBOutlet var scrollView: UIScrollView!
+class PagedScrollViewController_miniature: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    
     
     
     var pageImages: [UIImage] = []
@@ -19,11 +20,11 @@ class PagedScrollViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pageImages = [UIImage(named: "photo1.png")!,
-                      UIImage(named: "photo2.png")!,
-                    UIImage(named: "photo3.png")!,
-                    UIImage(named: "photo4.png")!,
-                    UIImage(named: "photo5.png")!]
+        pageImages = [UIImage(named: "miniature1.jpg")!,
+                      UIImage(named: "miniature2.jpg")!,
+                    UIImage(named: "miniature3.jpg")!,
+                    UIImage(named: "miniature4.jpg")!,
+                    UIImage(named: "miniature5.jpg")!]
         
         let pageCount = pageImages.count
         
@@ -95,5 +96,5 @@ class PagedScrollViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         loadVisblePages()
     }
-    
 }
+

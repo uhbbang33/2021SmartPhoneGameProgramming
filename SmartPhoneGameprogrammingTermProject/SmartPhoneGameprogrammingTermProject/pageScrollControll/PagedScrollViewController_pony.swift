@@ -1,5 +1,5 @@
 //
-//  PagedScrollViewController_shire.swift
+//  PagedScrollViewController_pony.swift
 //  SmartPhoneGameprogrammingTermProject
 //
 //  Created by kpugame on 2021/05/19.
@@ -7,9 +7,10 @@
 
 import UIKit
 
-class PagedScrollViewController_shire: UIViewController, UIScrollViewDelegate {
+class PagedScrollViewController_pony: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    
     
     var pageImages: [UIImage] = []
     
@@ -18,11 +19,11 @@ class PagedScrollViewController_shire: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pageImages = [UIImage(named: "photo1.png")!,
-                      UIImage(named: "photo2.png")!,
-                    UIImage(named: "photo3.png")!,
-                    UIImage(named: "photo4.png")!,
-                    UIImage(named: "photo5.png")!]
+        pageImages = [UIImage(named: "pony1.jpg")!,
+                      UIImage(named: "pony2.jpg")!,
+                    UIImage(named: "pony3.jpg")!,
+                    UIImage(named: "pony4.jpg")!,
+                    UIImage(named: "pony5.jpg")!]
         
         let pageCount = pageImages.count
         

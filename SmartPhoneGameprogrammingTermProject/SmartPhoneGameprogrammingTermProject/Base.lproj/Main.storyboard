@@ -238,27 +238,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="미니어쳐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI8-T5-f0p">
-                                <rect key="frame" x="164" y="476" width="87" height="30"/>
+                                <rect key="frame" x="163" y="476" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" red="0.47374671400000001" green="0.32224440030000001" blue="0.15911313699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="miniature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amd-fl-VeM">
-                                <rect key="frame" x="162" y="514" width="89" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-qT-o61">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-qT-o61">
                                 <rect key="frame" x="20" y="607" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">미니어처 말은 작은 신장을 가졌다. 많은 나라들, 특히 유럽과 아메리카에서 발견되며, 수세기 동안 선별적으로 번식한 결과이다. 관련된 특정 품종 등록부에 따라, 이 말들의 키는 보통 갈기의 마지막 털로 측정했을 때 34-38인치(86-97cm) 미만이다. 미니어처는 다양한 색깔과 코트 패턴을 가지고 있다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-Zk-dMZ">
                                 <rect key="frame" x="20" y="88" width="374" height="380"/>
@@ -275,6 +279,13 @@
                                     <outlet property="delegate" destination="UgV-2Q-W6W" id="N7C-lr-VIe"/>
                                 </connections>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="miniature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amd-fl-VeM">
+                                <rect key="frame" x="163" y="534" width="89" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7VT-je-sDG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -297,22 +308,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="erI-Mi-NRA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="erI-Mi-NRA">
                                 <rect key="frame" x="20" y="607" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">조랑말은 몸집이 작은 말이다. 어린 개체는 조랑망아지라 부른다. 성질이 온순하여 훈련시키기 쉽다. 여가를 위한 승마용으로 이용되고, 작은 사륜 마차도 끌 수 있다. 다른 종류의 말보다 오래 산다. 조랑말에는 셰틀랜드·웰시·해크니·쾌마러 등이 있다. 한국의 제주마도 여기에 속한다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfS-tM-dE2">
-                                <rect key="frame" x="181" y="514" width="48" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="포니 / 조랑말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-N3-WOj">
                                 <rect key="frame" x="144" y="476" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -335,6 +350,13 @@
                                     <outlet property="delegate" destination="fQ2-Tq-hXF" id="UjI-9b-Hwd"/>
                                 </connections>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfS-tM-dE2">
+                                <rect key="frame" x="183" y="532" width="48" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gT3-4e-4Pw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -357,27 +379,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-s7-RaB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-s7-RaB">
                                 <rect key="frame" x="20" y="588" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</string>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501555385968" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="더러브렛 / 서러브레드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-WR-geZ">
-                                <rect key="frame" x="99" y="476" width="217" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="thoroughbred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xy-MZ-pyU">
                                 <rect key="frame" x="142" y="534" width="131" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.47374671396583012" green="0.31185540260815814" blue="0.24085420319296674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A0y-ki-Hai">
@@ -395,6 +421,13 @@
                                     <outlet property="delegate" destination="MGT-wa-mre" id="J3s-o4-d6a"/>
                                 </connections>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="더러브렛 / 서러브레드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-WR-geZ">
+                                <rect key="frame" x="99" y="476" width="217" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vac-Ip-iMg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -424,14 +457,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tss-hQ-cV8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tss-hQ-cV8">
                                 <rect key="frame" x="20" y="584" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">샤이어(shire)는 영국 원산의 말 품종으로, 만마(輓馬), 즉 짐말으로 개량되었다. 현재는 삼림 순찰, 승마 등에도 이용된다. 털 빛깔은 대개 검은색이거나 회색, 갈색이다. 현존하는 말 품종 가운데 가장 거대한 크기를 가지고 있는데, 보통 어깨높이가 1.7m 이상이고 몸무게는 910kg를 넘는다. 키 1.9m에 몸무게 1.1t에 이르는 것도 있을 정도로 거대하다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-z0-ans">
                                 <rect key="frame" x="20" y="88" width="374" height="380"/>
@@ -452,7 +496,7 @@
                                 <rect key="frame" x="184" y="534" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
