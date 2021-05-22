@@ -58,7 +58,7 @@
                                     <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yww-UH-6n5" kind="show" id="38I-3f-Nbw"/>
+                                    <segue destination="mkI-Xl-dSf" kind="show" id="Msb-tb-PVb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-xk-FaL">
@@ -96,139 +96,6 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="71.651785714285708"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="zLG-RX-PJq">
-            <objects>
-                <tableViewController id="Yww-UH-6n5" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgX-HT-QcL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="3PE-dl-fBq">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bSy-x0-DPh">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bSy-x0-DPh" id="kZU-7f-vL6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="더러브렛 / 서러브레드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-Zb-5Sc">
-                                                    <rect key="frame" x="20" y="8" width="188" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQU-OL-DPj">
-                                                    <rect key="frame" x="350" y="2" width="44" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="CXM-5w-jMC"/>
-                                                        <constraint firstAttribute="height" constant="40" id="gbK-3X-hWO"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="MGT-wa-mre" kind="show" id="fGf-NQ-8UX"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KFy-jA-d2a">
-                                        <rect key="frame" x="0.0" y="68" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KFy-jA-d2a" id="uGM-c4-wpp">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="샤이어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-r4-DJv">
-                                                    <rect key="frame" x="20" y="8" width="58" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-gi-i9b">
-                                                    <rect key="frame" x="350" y="2" width="44" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="LST-Lz-htR"/>
-                                                        <constraint firstAttribute="width" constant="40" id="Wj7-Zd-Mfr"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="fRe-D1-m0B" kind="show" id="gt4-ET-5NN"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fQe-ez-wCm">
-                                        <rect key="frame" x="0.0" y="111.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fQe-ez-wCm" id="ZkE-pz-Jn7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="미니어쳐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5H-XE-2Fg">
-                                                    <rect key="frame" x="20" y="8" width="77" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umg-4u-VQG">
-                                                    <rect key="frame" x="350" y="2" width="44" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="2JQ-YN-Rfy"/>
-                                                        <constraint firstAttribute="width" constant="40" id="XBM-UB-EqN"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="UgV-2Q-W6W" kind="show" id="90K-aM-cut"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jVq-My-C20">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jVq-My-C20" id="Ze2-iY-zuL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="포니 / 조랑말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVm-W6-RqQ">
-                                                    <rect key="frame" x="20" y="8" width="112" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPf-ON-i1c">
-                                                    <rect key="frame" x="350" y="2" width="44" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="Viy-Db-e5h"/>
-                                                        <constraint firstAttribute="width" constant="40" id="pXP-pk-cXv"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="fQ2-Tq-hXF" kind="show" id="qMp-si-AhU"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="Yww-UH-6n5" id="fFu-ih-OWa"/>
-                            <outlet property="delegate" destination="Yww-UH-6n5" id="Fak-2t-kiB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="f6k-nR-aUD"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gRD-bL-8Ag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="447.99107142857139"/>
-        </scene>
         <!--Paged Scroll View Controller miniature-->
         <scene sceneID="faL-Fy-zNA">
             <objects>
@@ -244,11 +111,15 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.47374671400000001" green="0.32224440030000001" blue="0.15911313699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-qT-o61">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-qT-o61">
                                 <rect key="frame" x="20" y="607" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">미니어처 말은 작은 신장을 가졌다. 많은 나라들, 특히 유럽과 아메리카에서 발견되며, 수세기 동안 선별적으로 번식한 결과이다. 관련된 특정 품종 등록부에 따라, 이 말들의 키는 보통 갈기의 마지막 털로 측정했을 때 34-38인치(86-97cm) 미만이다. 미니어처는 다양한 색깔과 코트 패턴을 가지고 있다.</string>
+                                <mutableString key="text">미니어처 말은 어깨까지의 높이가 34인치(86cm)보다 커서는 안 되기 때문에 작은 조랑말보다도 작다. 그리고 완전히 자란 후의 체중이 150~250파운드(68~113kg)여야 한다. 일부 미니어처 말은 조랑말처럼 보이기도 하지만, 미니어처 말 사육자의 최종 목표는 정말로 작은 말을 만드는 것이다. 즉, 외관은 일반 말과 동일하지만 크기는 미니어처 사이즈의 말을 원하는 것이다. 따라서 미니어처 말은 목이나 배가 두꺼워서는 안 되며, 다리도 완전히 짧아서도 안 된다.
+
+=====================================
+
+오늘날, 미니어처 말은 혈통 있는 말로 길러지고 있다. 미니어처 말 중에서도 클럽 호스 유형의 경우 넓은 가슴과 근육질의 다리를 가지고 있는 반면, 지능형은 앞머리가 약간 들어간 동그란 얼굴에 연약한 주둥이, 커다란 눈, 얇은 몸체를 가지고 있다.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -308,11 +179,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="erI-Mi-NRA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="erI-Mi-NRA">
                                 <rect key="frame" x="20" y="607" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">조랑말은 몸집이 작은 말이다. 어린 개체는 조랑망아지라 부른다. 성질이 온순하여 훈련시키기 쉽다. 여가를 위한 승마용으로 이용되고, 작은 사륜 마차도 끌 수 있다. 다른 종류의 말보다 오래 산다. 조랑말에는 셰틀랜드·웰시·해크니·쾌마러 등이 있다. 한국의 제주마도 여기에 속한다.</string>
+                                <mutableString key="text">앞다리에서 발굽까지의 거리가 147cm미만인 말을 조랑말이라 한다. 대체로 조랑말은 갈기가 두껍고 털이 많으며 짧은 다리와 넓적한 몸통, 두꺼운 목, 그리고 몸에 비해 상대적으로 큰 머리를 가졌다. 또한 서식지의 기후와 풍토에 적응을 잘해 힘이 좋고 인내심이 강하다. 
+
+=====================================
+
+야생상태에서 가축으로 길드여진 이후, 조랑말은 다양한 분야에서 인류에게 도움을 준다. 체구가 작은 것에 비해 힘과 지구력이 좋아 전쟁과 물자수송, 농경, 석탄 채굴, 우편배달 등에서 실력을 과시해 왔다. 
+조랑말은 순치만 잘되면 사람과도 쉽게 친해지고 유순해지기 때문에 최근에는 재활승마 및 시각장애인 안내에서도 각광을 받고 있다.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -379,11 +255,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-s7-RaB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-s7-RaB">
                                 <rect key="frame" x="20" y="588" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501555385968" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</mutableString>
+                                <mutableString key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 
+
+=====================================
+
+작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -417,6 +297,11 @@
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="K5o-pe-wuz"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fci-cc-7dw"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="MGT-wa-mre" id="J3s-o4-d6a"/>
                                 </connections>
@@ -457,11 +342,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tss-hQ-cV8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tss-hQ-cV8">
                                 <rect key="frame" x="20" y="584" width="374" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">샤이어(shire)는 영국 원산의 말 품종으로, 만마(輓馬), 즉 짐말으로 개량되었다. 현재는 삼림 순찰, 승마 등에도 이용된다. 털 빛깔은 대개 검은색이거나 회색, 갈색이다. 현존하는 말 품종 가운데 가장 거대한 크기를 가지고 있는데, 보통 어깨높이가 1.7m 이상이고 몸무게는 910kg를 넘는다. 키 1.9m에 몸무게 1.1t에 이르는 것도 있을 정도로 거대하다.</string>
+                                <mutableString key="text">샤이어(shire)는 영국 원산의 말 품종으로, 만마(輓馬), 즉 짐말으로 개량되었다. 현재는 삼림 순찰, 승마 등에도 이용된다. 털 빛깔은 대개 검은색이거나 회색, 갈색이다. 현존하는 말 품종 가운데 가장 거대한 크기를 가지고 있는데, 보통 어깨높이가 1.7m 이상이고 몸무게는 910kg를 넘는다. 키 1.9m에 몸무게 1.1t에 이르는 것도 있을 정도로 거대하다.
+
+=====================================
+
+샤이어는 서러브레드 같은 경주용 말과는 달리 무언가를 끄는 데에 적합하며 힘이 강하고 지구력이 높으며 성격이 온순하고 착하며 참을성이 좋다. 주로 마차, 짐마차를 끄는데에 많이 사용되었으며 농경시대에는 농사에도 많이 이용되었다. 또 술수레를 끄는 데도 한몫 했다고 한다. 워낙 힘이 강하다보니 힘이 약한 말의 경우 두세마리가 끌어야 할 정도의 중량을 혼자서 끌 정도로 대단한 힘을 가지고 있다. 원래 승용마로는 그다지 사용하지 않던 말이지만, 요즘에는 트럭 덕분에 화물 운송용 중종마 수요가 급감하면서 오히려 승용마로 더 많이 사용되는 편이다.
+반대로 귀찮거나 고집을 부리면서 움직이지 않으려고 하면 건장한 성인 몇 명이 달라붙어야 움직이게 할 수 있을 정도로 힘과 덩치가 대단하다.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -644,8 +534,109 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="71.651785714285708"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="CwE-SM-M0t">
+            <objects>
+                <tableViewController id="mkI-Xl-dSf" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSW-WM-Xwc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="말 품종" id="xOc-oA-NaR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="egC-CS-Hba">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egC-CS-Hba" id="jmy-xL-wOC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-2Z-XD2">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="서러브레드.png"/>
+                                                    <connections>
+                                                        <segue destination="MGT-wa-mre" kind="show" id="B7B-Wv-JWG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pu7-x6-BKy">
+                                        <rect key="frame" x="0.0" y="104.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pu7-x6-BKy" id="kUy-1I-P2p">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roq-tB-qJy">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="샤이어.png"/>
+                                                    <connections>
+                                                        <segue destination="fRe-D1-m0B" kind="show" id="AXR-JJ-v47"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="6UC-Ys-BqR">
+                                        <rect key="frame" x="0.0" y="184.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6UC-Ys-BqR" id="Un1-fx-OV0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-nV-Cih">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="미니어처.png"/>
+                                                    <connections>
+                                                        <segue destination="UgV-2Q-W6W" kind="show" id="BTX-wY-4SF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="5N1-36-8Ao">
+                                        <rect key="frame" x="0.0" y="264.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5N1-36-8Ao" id="e0a-la-Ubb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-dj-hBf">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="포니.png"/>
+                                                    <connections>
+                                                        <segue destination="fQ2-Tq-hXF" kind="show" id="72r-Bw-R5E"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="mkI-Xl-dSf" id="Be3-VT-CTj"/>
+                            <outlet property="delegate" destination="mkI-Xl-dSf" id="dxi-4d-mUQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eWZ-db-zMF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btu-q1-eBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="406"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="미니어처.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="샤이어.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="서러브레드.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="포니.png" width="246.85714721679688" height="92.571426391601562"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
