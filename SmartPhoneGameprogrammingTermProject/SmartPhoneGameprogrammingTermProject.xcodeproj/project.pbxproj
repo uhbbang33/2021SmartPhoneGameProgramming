@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A121392A265532A400772963 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1213929265532A400772963 /* Title.png */; };
+		A13B77C2265A4D0D00C8B9F4 /* HorseInfoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B77C1265A4D0D00C8B9F4 /* HorseInfoDetailTableViewController.swift */; };
+		A13B77C4265A4D3000C8B9F4 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B77C3265A4D3000C8B9F4 /* HorseInfoTableViewController.swift */; };
+		A1E966C62656176400FCD2AA /* SearchHorseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E966C52656176400FCD2AA /* SearchHorseRecord.swift */; };
+		A1E966C82656223300FCD2AA /* Horse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E966C72656223300FCD2AA /* Horse.swift */; };
 		A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269D9264A6ED500A41B21 /* AppDelegate.swift */; };
 		A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */; };
 		A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DD264A6ED500A41B21 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		A1213929265532A400772963 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		A13B77C1265A4D0D00C8B9F4 /* HorseInfoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseInfoDetailTableViewController.swift; sourceTree = "<group>"; };
+		A13B77C3265A4D3000C8B9F4 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
+		A1E966C52656176400FCD2AA /* SearchHorseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHorseRecord.swift; sourceTree = "<group>"; };
+		A1E966C72656223300FCD2AA /* Horse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horse.swift; sourceTree = "<group>"; };
 		A1F269D6264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPhoneGameprogrammingTermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F269D9264A6ED500A41B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		A13B77BE265A3E2700C8B9F4 /* HorseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A13B77C1265A4D0D00C8B9F4 /* HorseInfoDetailTableViewController.swift */,
+				A13B77C3265A4D3000C8B9F4 /* HorseInfoTableViewController.swift */,
+			);
+			path = HorseInfo;
+			sourceTree = "<group>";
+		};
 		A1F269CD264A6ED500A41B21 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +83,17 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A13B77BE265A3E2700C8B9F4 /* HorseInfo */,
 				A1F269D9264A6ED500A41B21 /* AppDelegate.swift */,
 				A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */,
 				A1F269DD264A6ED500A41B21 /* ViewController.swift */,
+				A1E966C52656176400FCD2AA /* SearchHorseRecord.swift */,
 				A1F269DF264A6ED500A41B21 /* Main.storyboard */,
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
 				A1F269E7264A6ED600A41B21 /* Info.plist */,
 				A12139282655315F00772963 /* Image */,
+				A1E966C72656223300FCD2AA /* Horse.swift */,
 			);
 			path = SmartPhoneGameprogrammingTermProject;
 			sourceTree = "<group>";
@@ -150,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
+				A13B77C2265A4D0D00C8B9F4 /* HorseInfoDetailTableViewController.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
+				A1E966C82656223300FCD2AA /* Horse.swift in Sources */,
+				A13B77C4265A4D3000C8B9F4 /* HorseInfoTableViewController.swift in Sources */,
+				A1E966C62656176400FCD2AA /* SearchHorseRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
