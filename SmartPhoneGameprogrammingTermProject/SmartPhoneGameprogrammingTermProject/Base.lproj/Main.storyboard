@@ -58,7 +58,7 @@
                                     <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yww-UH-6n5" kind="show" id="38I-3f-Nbw"/>
+                                    <segue destination="mkI-Xl-dSf" kind="show" id="Msb-tb-PVb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-xk-FaL">
@@ -96,90 +96,308 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="71.651785714285708"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="zLG-RX-PJq">
-            <objects>
-                <tableViewController id="Yww-UH-6n5" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgX-HT-QcL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bSy-x0-DPh">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bSy-x0-DPh" id="kZU-7f-vL6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Yww-UH-6n5" id="fFu-ih-OWa"/>
-                            <outlet property="delegate" destination="Yww-UH-6n5" id="Fak-2t-kiB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="f6k-nR-aUD"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gRD-bL-8Ag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1909" y="448"/>
-        </scene>
-        <!--View Controller-->
+        <!--Paged Scroll View Controller miniature-->
         <scene sceneID="faL-Fy-zNA">
             <objects>
-                <viewController id="UgV-2Q-W6W" sceneMemberID="viewController">
+                <viewController id="UgV-2Q-W6W" customClass="PagedScrollViewController_miniature" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Md2-1D-ShR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="미니어쳐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI8-T5-f0p">
+                                <rect key="frame" x="163" y="476" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.47374671400000001" green="0.32224440030000001" blue="0.15911313699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-qT-o61">
+                                <rect key="frame" x="20" y="607" width="374" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">미니어처 말은 어깨까지의 높이가 34인치(86cm)보다 커서는 안 되기 때문에 작은 조랑말보다도 작다. 그리고 완전히 자란 후의 체중이 150~250파운드(68~113kg)여야 한다. 일부 미니어처 말은 조랑말처럼 보이기도 하지만, 미니어처 말 사육자의 최종 목표는 정말로 작은 말을 만드는 것이다. 즉, 외관은 일반 말과 동일하지만 크기는 미니어처 사이즈의 말을 원하는 것이다. 따라서 미니어처 말은 목이나 배가 두꺼워서는 안 되며, 다리도 완전히 짧아서도 안 된다.
+
+=====================================
+
+오늘날, 미니어처 말은 혈통 있는 말로 길러지고 있다. 미니어처 말 중에서도 클럽 호스 유형의 경우 넓은 가슴과 근육질의 다리를 가지고 있는 반면, 지능형은 앞머리가 약간 들어간 동그란 얼굴에 연약한 주둥이, 커다란 눈, 얇은 몸체를 가지고 있다.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-Zk-dMZ">
+                                <rect key="frame" x="20" y="88" width="374" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-Oh-SJL">
+                                        <rect key="frame" x="126" y="352" width="122" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="909-59-Jah"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FU0-xV-Crb"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UgV-2Q-W6W" id="N7C-lr-VIe"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="miniature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amd-fl-VeM">
+                                <rect key="frame" x="163" y="534" width="89" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7VT-je-sDG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zjE-tH-9nw"/>
+                    <connections>
+                        <outlet property="pageControl" destination="EAF-Oh-SJL" id="4S1-bV-CEd"/>
+                        <outlet property="scrollView" destination="kMf-Zk-dMZ" id="CPK-L9-9gT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUF-yI-Rtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2968" y="693"/>
+            <point key="canvasLocation" x="2966.666666666667" y="692.41071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Paged Scroll View Controller pony-->
         <scene sceneID="jMh-hT-QZz">
             <objects>
-                <viewController id="fQ2-Tq-hXF" sceneMemberID="viewController">
+                <viewController id="fQ2-Tq-hXF" customClass="PagedScrollViewController_pony" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAw-WU-Bvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="erI-Mi-NRA">
+                                <rect key="frame" x="20" y="607" width="374" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">앞다리에서 발굽까지의 거리가 147cm미만인 말을 조랑말이라 한다. 대체로 조랑말은 갈기가 두껍고 털이 많으며 짧은 다리와 넓적한 몸통, 두꺼운 목, 그리고 몸에 비해 상대적으로 큰 머리를 가졌다. 또한 서식지의 기후와 풍토에 적응을 잘해 힘이 좋고 인내심이 강하다. 
+
+=====================================
+
+야생상태에서 가축으로 길드여진 이후, 조랑말은 다양한 분야에서 인류에게 도움을 준다. 체구가 작은 것에 비해 힘과 지구력이 좋아 전쟁과 물자수송, 농경, 석탄 채굴, 우편배달 등에서 실력을 과시해 왔다. 
+조랑말은 순치만 잘되면 사람과도 쉽게 친해지고 유순해지기 때문에 최근에는 재활승마 및 시각장애인 안내에서도 각광을 받고 있다.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="포니 / 조랑말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-N3-WOj">
+                                <rect key="frame" x="144" y="476" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwa-8s-hV9">
+                                <rect key="frame" x="20" y="88" width="374" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-i8-yYi">
+                                        <rect key="frame" x="126" y="352" width="122" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FMG-fV-jZm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gyZ-WQ-Tzk"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fQ2-Tq-hXF" id="UjI-9b-Hwd"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfS-tM-dE2">
+                                <rect key="frame" x="183" y="532" width="48" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gT3-4e-4Pw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hfr-LO-0hP"/>
+                    <connections>
+                        <outlet property="pageControl" destination="SAh-i8-yYi" id="VNr-Ab-5o0"/>
+                        <outlet property="scrollView" destination="nwa-8s-hV9" id="IHO-Ex-Opb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iY1-K0-f0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3935" y="693"/>
+            <point key="canvasLocation" x="3934.7826086956525" y="692.41071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Paged Scroll View Controller-->
         <scene sceneID="RYp-X9-CTO">
             <objects>
-                <viewController id="MGT-wa-mre" sceneMemberID="viewController">
+                <viewController id="MGT-wa-mre" customClass="PagedScrollViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPN-XS-kwY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-s7-RaB">
+                                <rect key="frame" x="20" y="588" width="374" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501555385968" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 
+
+=====================================
+
+작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="thoroughbred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xy-MZ-pyU">
+                                <rect key="frame" x="142" y="534" width="131" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.47374671396583012" green="0.31185540260815814" blue="0.24085420319296674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A0y-ki-Hai">
+                                <rect key="frame" x="20" y="88" width="374" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3U9-8v-BoG">
+                                        <rect key="frame" x="126" y="344" width="122" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="K5o-pe-wuz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fci-cc-7dw"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="MGT-wa-mre" id="J3s-o4-d6a"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="더러브렛 / 서러브레드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-WR-geZ">
+                                <rect key="frame" x="99" y="476" width="217" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vac-Ip-iMg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ItO-bk-3oV"/>
+                    <connections>
+                        <outlet property="pageControl" destination="3U9-8v-BoG" id="h3m-K0-YSM"/>
+                        <outlet property="scrollView" destination="A0y-ki-Hai" id="6Bm-FP-Qqz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paH-T1-ccg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2968.115942028986" y="-14.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--Paged Scroll View Controller shire-->
         <scene sceneID="pBb-b0-pmz">
             <objects>
-                <viewController id="fRe-D1-m0B" sceneMemberID="viewController">
+                <viewController id="fRe-D1-m0B" customClass="PagedScrollViewController_shire" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wfd-wT-WV2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="샤이어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y6-Ch-l5l">
+                                <rect key="frame" x="171" y="476" width="72" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tss-hQ-cV8">
+                                <rect key="frame" x="20" y="584" width="374" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.32865501559999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">샤이어(shire)는 영국 원산의 말 품종으로, 만마(輓馬), 즉 짐말으로 개량되었다. 현재는 삼림 순찰, 승마 등에도 이용된다. 털 빛깔은 대개 검은색이거나 회색, 갈색이다. 현존하는 말 품종 가운데 가장 거대한 크기를 가지고 있는데, 보통 어깨높이가 1.7m 이상이고 몸무게는 910kg를 넘는다. 키 1.9m에 몸무게 1.1t에 이르는 것도 있을 정도로 거대하다.
+
+=====================================
+
+샤이어는 서러브레드 같은 경주용 말과는 달리 무언가를 끄는 데에 적합하며 힘이 강하고 지구력이 높으며 성격이 온순하고 착하며 참을성이 좋다. 주로 마차, 짐마차를 끄는데에 많이 사용되었으며 농경시대에는 농사에도 많이 이용되었다. 또 술수레를 끄는 데도 한몫 했다고 한다. 워낙 힘이 강하다보니 힘이 약한 말의 경우 두세마리가 끌어야 할 정도의 중량을 혼자서 끌 정도로 대단한 힘을 가지고 있다. 원래 승용마로는 그다지 사용하지 않던 말이지만, 요즘에는 트럭 덕분에 화물 운송용 중종마 수요가 급감하면서 오히려 승용마로 더 많이 사용되는 편이다.
+반대로 귀찮거나 고집을 부리면서 움직이지 않으려고 하면 건장한 성인 몇 명이 달라붙어야 움직이게 할 수 있을 정도로 힘과 덩치가 대단하다.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-z0-ans">
+                                <rect key="frame" x="20" y="88" width="374" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7PY-pe-Nny">
+                                        <rect key="frame" x="126" y="344" width="122" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="u3F-PQ-odR"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ser-Ll-wFm"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fRe-D1-m0B" id="9fp-0c-BHA"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REa-6q-pA5">
+                                <rect key="frame" x="184" y="534" width="46" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4740250707" green="0.30999788639999998" blue="0.24069079760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XzT-7P-FRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zvR-fR-tzb"/>
+                    <connections>
+                        <outlet property="pageControl" destination="7PY-pe-Nny" id="Hsp-tf-NQy"/>
+                        <outlet property="scrollView" destination="R2e-z0-ans" id="6ZF-aP-MXL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfe-TG-emo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,8 +594,112 @@
             </objects>
             <point key="canvasLocation" x="2742" y="-1059"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="CwE-SM-M0t">
+            <objects>
+                <tableViewController id="mkI-Xl-dSf" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSW-WM-Xwc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="말 품종" id="xOc-oA-NaR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="egC-CS-Hba">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egC-CS-Hba" id="jmy-xL-wOC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-2Z-XD2">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="서러브레드.png"/>
+                                                    <connections>
+                                                        <segue destination="MGT-wa-mre" kind="show" id="B7B-Wv-JWG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pu7-x6-BKy">
+                                        <rect key="frame" x="0.0" y="104.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pu7-x6-BKy" id="kUy-1I-P2p">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roq-tB-qJy">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="샤이어.png"/>
+                                                    <connections>
+                                                        <segue destination="fRe-D1-m0B" kind="show" id="AXR-JJ-v47"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="6UC-Ys-BqR">
+                                        <rect key="frame" x="0.0" y="184.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6UC-Ys-BqR" id="Un1-fx-OV0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-nV-Cih">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="미니어처.png"/>
+                                                    <connections>
+                                                        <segue destination="UgV-2Q-W6W" kind="show" id="BTX-wY-4SF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="5N1-36-8Ao">
+                                        <rect key="frame" x="0.0" y="264.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5N1-36-8Ao" id="e0a-la-Ubb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-dj-hBf">
+                                                    <rect key="frame" x="20" y="-7" width="247" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="포니.png"/>
+                                                    <connections>
+                                                        <segue destination="fQ2-Tq-hXF" kind="show" id="72r-Bw-R5E"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="mkI-Xl-dSf" id="Be3-VT-CTj"/>
+                            <outlet property="delegate" destination="mkI-Xl-dSf" id="dxi-4d-mUQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eWZ-db-zMF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btu-q1-eBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="406"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="미니어처.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="샤이어.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="서러브레드.png" width="246.85714721679688" height="92.571426391601562"/>
+        <image name="포니.png" width="246.85714721679688" height="92.571426391601562"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
