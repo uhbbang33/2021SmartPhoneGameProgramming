@@ -8,19 +8,23 @@ class PlantDetailTableViewController: UITableViewController, XMLParserDelegate {
     
     var parser = XMLParser()
     
-    let postsname : [String] = ["상세정보유무", "과국명", "과명", "속국명", "속명", "비추천명", "국명"]
+    let postsname : [String] = ["국명", "과국명", "과명", "속국명", "속명", "비추천명", "도감번호", "정명학명", "이명학명", "최초등록일시", "최종수정일시"]
     
-    var posts : [String] = ["","","","","","",""]
+    var posts : [String] = ["","","","","","","","","","","",""]
     
     var element = NSString()
     
-    var detailYn = NSMutableString()
+    var plantGnrlNm = NSMutableString()
     var familyKorNm = NSMutableString()
     var familyNm = NSMutableString()
     var genusKorNm = NSMutableString()
     var genusNm = NSMutableString()
     var notRcmmGnrlNm = NSMutableString()
-    var plantGnrlNm = NSMutableString()
+    var plantPilbkNo = NSMutableString()
+    var plantSpecsScnm = NSMutableString()
+    var snnmScnm = NSMutableString()
+    var frstRgstnDtm = NSMutableString()
+    var lastUpdtDtm = NSMutableString()
     
     func beginParsing()
     {
@@ -36,10 +40,10 @@ class PlantDetailTableViewController: UITableViewController, XMLParserDelegate {
         element = elementName as NSString
         if(elementName as NSString).isEqual(to: "item")
         {
-            posts = ["","","","","","","","","","","","","",""]
+            posts = ["","","","","","","","","","","",""]
             
-            detailYn = NSMutableString()
-            detailYn = ""
+            plantGnrlNm = NSMutableString()
+            plantGnrlNm = ""
             familyKorNm = NSMutableString()
             familyKorNm = ""
             familyNm = NSMutableString()
@@ -50,16 +54,24 @@ class PlantDetailTableViewController: UITableViewController, XMLParserDelegate {
             genusNm = ""
             notRcmmGnrlNm = NSMutableString()
             notRcmmGnrlNm = ""
-            plantGnrlNm = NSMutableString()
-            plantGnrlNm = ""
+            plantPilbkNo = NSMutableString()
+            plantPilbkNo = ""
+            plantSpecsScnm = NSMutableString()
+            plantSpecsScnm = ""
+            snnmScnm = NSMutableString()
+            snnmScnm = ""
+            frstRgstnDtm = NSMutableString()
+            frstRgstnDtm = ""
+            lastUpdtDtm = NSMutableString()
+            lastUpdtDtm = ""
         }
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String)
     {
-        if element.isEqual(to: "detailYn"){
-            detailYn.append(string)
-        } else if element.isEqual(to: "familyKorNm"){
+        if element.isEqual(to: "plantGnrlNm"){
+            plantGnrlNm.append(string)
+        }else if element.isEqual(to: "familyKorNm"){
             familyKorNm.append(string)
         }else if element.isEqual(to: "familyNm"){
             familyNm.append(string)
@@ -69,16 +81,24 @@ class PlantDetailTableViewController: UITableViewController, XMLParserDelegate {
             genusNm.append(string)
         }else if element.isEqual(to: "notRcmmGnrlNm"){
             notRcmmGnrlNm.append(string)
-        }else if element.isEqual(to: "plantGnrlNm"){
-            plantGnrlNm.append(string)
+        }else if element.isEqual(to: "plantPilbkNo"){
+            plantPilbkNo.append(string)
+        }else if element.isEqual(to: "plantSpecsScnm"){
+            plantSpecsScnm.append(string)
+        }else if element.isEqual(to: "snnmScnm"){
+            snnmScnm.append(string)
+        }else if element.isEqual(to: "frstRgstnDtm"){
+            frstRgstnDtm.append(string)
+        }else if element.isEqual(to: "lastUpdtDtm"){
+            lastUpdtDtm.append(string)
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
     {
         if(elementName as NSString).isEqual(to: "item"){
-            if !detailYn.isEqual(nil){
-                posts[0] = detailYn as String
+            if !plantGnrlNm.isEqual(nil){
+                posts[0] = plantGnrlNm as String
             }
             if !familyKorNm.isEqual(nil){
                 posts[1] = familyKorNm as String
@@ -95,8 +115,20 @@ class PlantDetailTableViewController: UITableViewController, XMLParserDelegate {
             if !notRcmmGnrlNm.isEqual(nil){
                 posts[5] = notRcmmGnrlNm as String
             }
-            if !plantGnrlNm.isEqual(nil){
-                posts[6] = plantGnrlNm as String
+            if !plantPilbkNo.isEqual(nil){
+                posts[6] = plantPilbkNo as String
+            }
+            if !plantSpecsScnm.isEqual(nil){
+                posts[7] = plantSpecsScnm as String
+            }
+            if !snnmScnm.isEqual(nil){
+                posts[8] = snnmScnm as String
+            }
+            if !frstRgstnDtm.isEqual(nil){
+                posts[9] = frstRgstnDtm as String
+            }
+            if !lastUpdtDtm.isEqual(nil){
+                posts[10] = lastUpdtDtm as String
             }
         }
     }

@@ -19,6 +19,19 @@ class PlantTableViewController: UITableViewController, XMLParserDelegate {
     var hrName = ""
     var hrName_utf8 = ""
     
+    var keyword = ""
+    var keyword_utf8 = ""
+    
+    @IBOutlet weak var searchKeyword: UITextField!
+    
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        keyword = searchKeyword.text!
+        keyword_utf8 = keyword.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+        
+        
+        beginParsing()
+    }
+    
     @IBAction func doneToTableViewController(segue: UIStoryboardSegue){
         
     }
@@ -29,19 +42,14 @@ class PlantTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
-        
     }
     
-//    let addr = "http://openapi.nature.go.kr/openapi/service/rest/PlantService/plntIlstrSearch"
-//    let key = "cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
-
-    let url = "http://openapi.nature.go.kr/openapi/service/rest/PlantService/plntIlstrSearch?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
+    let url = "http://openapi.nature.go.kr/openapi/service/rest/PlantService/plntIlstrSearch?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=20&sw="
     
     func beginParsing()
     {
-        //url = addr + "?serviceKey=" + key
         posts = []
-        parser = XMLParser(contentsOf: (URL(string: url))!)!
+        parser = XMLParser(contentsOf: (URL(string: url + keyword_utf8))!)!
         parser.delegate = self
         parser.parse()
         plantInfoTbData!.reloadData()
@@ -96,7 +104,6 @@ class PlantTableViewController: UITableViewController, XMLParserDelegate {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
@@ -110,9 +117,7 @@ class PlantTableViewController: UITableViewController, XMLParserDelegate {
                 hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
                 
                 if let plantDetailTableViewController = segue.destination as? PlantDetailTableViewController{
-                    plantDetailTableViewController.url = url + "&sw=" + hrName_utf8
-                    // 검색을 먼저 하고 검색 결과를 table view로 보여주기
-                    // -> 항목을 클릭하면 그에 따른 상세정보를 볼 수 있게끔
+                    plantDetailTableViewController.url = url + "&sw=" + hrName_utf8 + "&st=3"
                 }
             }
         }
