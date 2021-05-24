@@ -15,7 +15,6 @@
 		A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */; };
 		A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E43265BD97D003DE136 /* MapViewController.swift */; };
 		A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */; };
-		A1CE3E4B265BDB40003DE136 /* 서러브레드.png in Resources */ = {isa = PBXBuildFile; fileRef = A1CE3E4A265BDB40003DE136 /* 서러브레드.png */; };
 		A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2C265971030056E1B5 /* 미니어처.png */; };
 		A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2E2659710C0056E1B5 /* 샤이어.png */; };
 		A1D86E31265971170056E1B5 /* 포니.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E30265971170056E1B5 /* 포니.png */; };
@@ -47,6 +46,7 @@
 		A1F269E1264A6ED500A41B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F269DF264A6ED500A41B21 /* Main.storyboard */; };
 		A1F269E3264A6ED600A41B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E2264A6ED600A41B21 /* Assets.xcassets */; };
 		A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */; };
+		A1FBE06D265BDC8100E278E3 /* 서러브레드.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FBE06C265BDC8100E278E3 /* 서러브레드.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,6 @@
 		A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E43265BD97D003DE136 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailTableViewController.swift; sourceTree = "<group>"; };
-		A1CE3E4A265BDB40003DE136 /* 서러브레드.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "서러브레드.png"; sourceTree = "<group>"; };
 		A1D86E2C265971030056E1B5 /* 미니어처.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "미니어처.png"; sourceTree = "<group>"; };
 		A1D86E2E2659710C0056E1B5 /* 샤이어.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "샤이어.png"; sourceTree = "<group>"; };
 		A1D86E30265971170056E1B5 /* 포니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "포니.png"; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		A1F269E2264A6ED600A41B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F269E5264A6ED600A41B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F269E7264A6ED600A41B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FBE06C265BDC8100E278E3 /* 서러브레드.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "서러브레드.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		A12139282655315F00772963 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A1CE3E4A265BDB40003DE136 /* 서러브레드.png */,
+				A1FBE06C265BDC8100E278E3 /* 서러브레드.png */,
 				A1D86E2C265971030056E1B5 /* 미니어처.png */,
 				A1D86E30265971170056E1B5 /* 포니.png */,
 				A1D86E2E2659710C0056E1B5 /* 샤이어.png */,
@@ -294,7 +294,7 @@
 				A1ED6CDE265646AD0044CBBB /* shire4.jpg in Resources */,
 				A1ED6CEB265647070044CBBB /* miniature5.jpg in Resources */,
 				A1ED6CCB265645870044CBBB /* pony5.jpg in Resources */,
-				A1CE3E4B265BDB40003DE136 /* 서러브레드.png in Resources */,
+				A1FBE06D265BDC8100E278E3 /* 서러브레드.png in Resources */,
 				A1ED6CE9265647070044CBBB /* miniature2.jpg in Resources */,
 				A1ED6CD4265646030044CBBB /* thoroughbred4.jpg in Resources */,
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
