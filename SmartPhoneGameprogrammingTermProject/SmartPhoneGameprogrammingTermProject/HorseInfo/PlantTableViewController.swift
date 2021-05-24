@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import Foundation
 
-class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
+class PlantTableViewController: UITableViewController, XMLParserDelegate {
     var parser = XMLParser()
     var posts = NSMutableArray()
     var elements = NSMutableDictionary()
@@ -19,15 +18,13 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
     
     var hrName = ""
     var hrName_utf8 = ""
-
-//    @IBAction func doneToTableViewController(segue: segueToHorseInfoDetail){
-//    }
     
     @IBAction func doneToTableViewController(segue: UIStoryboardSegue){
         
     }
     
-    @IBOutlet weak var horseInfoTBData: UITableView!
+    @IBOutlet weak var plantInfoTbData: UITableView!
+    //@IBOutlet weak var plantInfoTBData: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +32,19 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
         
     }
     
-    let addr = "http://apis.data.go.kr/B551015/API8/raceHorseInfo"
-    let key = "cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
-    let others = "?numOfRows=10&pageNo=1"
+//    let addr = "http://openapi.nature.go.kr/openapi/service/rest/PlantService/plntIlstrSearch"
+//    let key = "cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
 
-    var url : String?
+    let url = "http://openapi.nature.go.kr/openapi/service/rest/PlantService/plntIlstrSearch?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
     
     func beginParsing()
     {
-        url = addr + others + "&serviceKey=" + key
+        //url = addr + "?serviceKey=" + key
         posts = []
-        parser = XMLParser(contentsOf: (URL(string: addr + others + "&serviceKey=" + key ))!)!
+        parser = XMLParser(contentsOf: (URL(string: url))!)!
         parser.delegate = self
         parser.parse()
-        horseInfoTBData!.reloadData()
+        plantInfoTbData!.reloadData()
     }
 
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]){
@@ -65,9 +61,9 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String){
-        if element.isEqual(to: "hrName"){
+        if element.isEqual(to: "plantGnrlNm"){
             horseName.append(string)
-        } else if element.isEqual(to: "birthday"){
+        } else if element.isEqual(to: "familyKorNm"){
             horseBirthday.append(string)
         }
     }
@@ -99,22 +95,26 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
         return cell
     }
     
-    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "segueToHorseDetail" {
+        if segue.identifier == "SegueToHorseDetail" {
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
                 hrName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "name") as! NSString as String
+                
                 hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-                if let horseInfoDetailTableViewController = segue.destination as? HorseInfoDetailTableViewController{
-                    horseInfoDetailTableViewController.url = url! + "&hr_name=" + hrName_utf8
+                
+                if let plantDetailTableViewController = segue.destination as? PlantDetailTableViewController{
+                    plantDetailTableViewController.url = url + "&sw=" + hrName_utf8
+                    // 검색을 먼저 하고 검색 결과를 table view로 보여주기
+                    // -> 항목을 클릭하면 그에 따른 상세정보를 볼 수 있게끔
                 }
             }
         }
-        
     }
 }
-
-
