@@ -23,8 +23,8 @@ class horseTableViewControl: UITableViewController {
         tableView.estimatedRowHeight = 258.0
         tableView.rowHeight = UITableView.automaticDimension
 
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
