@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A121392A265532A400772963 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1213929265532A400772963 /* Title.png */; };
-		A175A142265A2E960090B8BB /* horseTableViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175A141265A2E960090B8BB /* horseTableViewControl.swift */; };
-		A175A144265A2ED60090B8BB /* horseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175A143265A2ED60090B8BB /* horseViewCell.swift */; };
+		A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620826600CA200AB3D1D /* Animator.swift */; };
+		A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620926600CA200AB3D1D /* Animations.swift */; };
+		A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */; };
+		A1CC621026600D3900AB3D1D /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620F26600D3900AB3D1D /* UITableView+Ext.swift */; };
+		A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC62112660119300AB3D1D /* thoroughbredController.swift */; };
+		A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6214266011BB00AB3D1D /* shireController.swift */; };
+		A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6216266011D100AB3D1D /* miniatureController.swift */; };
+		A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6218266011E100AB3D1D /* ponyController.swift */; };
 		A1CE3E45265BD97D003DE136 /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E40265BD97D003DE136 /* PlantTableViewController.swift */; };
 		A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */; };
 		A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */; };
@@ -18,7 +24,18 @@
 		A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2C265971030056E1B5 /* 미니어처.png */; };
 		A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2E2659710C0056E1B5 /* 샤이어.png */; };
 		A1D86E31265971170056E1B5 /* 포니.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E30265971170056E1B5 /* 포니.png */; };
-		A1DF063B265A40E1006EC1BC /* horsePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF063A265A40E1006EC1BC /* horsePageController.swift */; };
+		A1E58C1626627A4D00223E3E /* horse5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0A26627A4D00223E3E /* horse5.png */; };
+		A1E58C1726627A4D00223E3E /* horse2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0B26627A4D00223E3E /* horse2.png */; };
+		A1E58C1826627A4D00223E3E /* horse8.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0C26627A4D00223E3E /* horse8.png */; };
+		A1E58C1926627A4D00223E3E /* horse1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0D26627A4D00223E3E /* horse1.png */; };
+		A1E58C1A26627A4D00223E3E /* horse9.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0E26627A4D00223E3E /* horse9.png */; };
+		A1E58C1B26627A4D00223E3E /* horse11.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C0F26627A4D00223E3E /* horse11.png */; };
+		A1E58C1C26627A4D00223E3E /* horse4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1026627A4D00223E3E /* horse4.png */; };
+		A1E58C1D26627A4D00223E3E /* horse12.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1126627A4D00223E3E /* horse12.png */; };
+		A1E58C1E26627A4D00223E3E /* horse10.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1226627A4D00223E3E /* horse10.png */; };
+		A1E58C1F26627A4D00223E3E /* horse6.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1326627A4D00223E3E /* horse6.png */; };
+		A1E58C2026627A4D00223E3E /* horse3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1426627A4D00223E3E /* horse3.png */; };
+		A1E58C2126627A4D00223E3E /* horse7.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1526627A4D00223E3E /* horse7.png */; };
 		A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC3265645860044CBBB /* pony1.jpg */; };
 		A1ED6CC9265645870044CBBB /* pony3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC4265645860044CBBB /* pony3.jpg */; };
 		A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC5265645870044CBBB /* pony4.jpg */; };
@@ -51,8 +68,14 @@
 
 /* Begin PBXFileReference section */
 		A1213929265532A400772963 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
-		A175A141265A2E960090B8BB /* horseTableViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horseTableViewControl.swift; sourceTree = "<group>"; };
-		A175A143265A2ED60090B8BB /* horseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horseViewCell.swift; sourceTree = "<group>"; };
+		A1CC620826600CA200AB3D1D /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		A1CC620926600CA200AB3D1D /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorsetableViewController.swift; sourceTree = "<group>"; };
+		A1CC620F26600D3900AB3D1D /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		A1CC62112660119300AB3D1D /* thoroughbredController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoroughbredController.swift; sourceTree = "<group>"; };
+		A1CC6214266011BB00AB3D1D /* shireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shireController.swift; sourceTree = "<group>"; };
+		A1CC6216266011D100AB3D1D /* miniatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniatureController.swift; sourceTree = "<group>"; };
+		A1CC6218266011E100AB3D1D /* ponyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ponyController.swift; sourceTree = "<group>"; };
 		A1CE3E40265BD97D003DE136 /* PlantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoDetailTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +84,18 @@
 		A1D86E2C265971030056E1B5 /* 미니어처.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "미니어처.png"; sourceTree = "<group>"; };
 		A1D86E2E2659710C0056E1B5 /* 샤이어.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "샤이어.png"; sourceTree = "<group>"; };
 		A1D86E30265971170056E1B5 /* 포니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "포니.png"; sourceTree = "<group>"; };
-		A1DF063A265A40E1006EC1BC /* horsePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horsePageController.swift; sourceTree = "<group>"; };
+		A1E58C0A26627A4D00223E3E /* horse5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse5.png; sourceTree = "<group>"; };
+		A1E58C0B26627A4D00223E3E /* horse2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse2.png; sourceTree = "<group>"; };
+		A1E58C0C26627A4D00223E3E /* horse8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse8.png; sourceTree = "<group>"; };
+		A1E58C0D26627A4D00223E3E /* horse1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse1.png; sourceTree = "<group>"; };
+		A1E58C0E26627A4D00223E3E /* horse9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse9.png; sourceTree = "<group>"; };
+		A1E58C0F26627A4D00223E3E /* horse11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse11.png; sourceTree = "<group>"; };
+		A1E58C1026627A4D00223E3E /* horse4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse4.png; sourceTree = "<group>"; };
+		A1E58C1126627A4D00223E3E /* horse12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse12.png; sourceTree = "<group>"; };
+		A1E58C1226627A4D00223E3E /* horse10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse10.png; sourceTree = "<group>"; };
+		A1E58C1326627A4D00223E3E /* horse6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse6.png; sourceTree = "<group>"; };
+		A1E58C1426627A4D00223E3E /* horse3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse3.png; sourceTree = "<group>"; };
+		A1E58C1526627A4D00223E3E /* horse7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse7.png; sourceTree = "<group>"; };
 		A1ED6CC3265645860044CBBB /* pony1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony1.jpg; sourceTree = "<group>"; };
 		A1ED6CC4265645860044CBBB /* pony3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony3.jpg; sourceTree = "<group>"; };
 		A1ED6CC5265645870044CBBB /* pony4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony4.jpg; sourceTree = "<group>"; };
@@ -108,6 +142,18 @@
 		A12139282655315F00772963 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A1E58C0D26627A4D00223E3E /* horse1.png */,
+				A1E58C0B26627A4D00223E3E /* horse2.png */,
+				A1E58C1426627A4D00223E3E /* horse3.png */,
+				A1E58C1026627A4D00223E3E /* horse4.png */,
+				A1E58C0A26627A4D00223E3E /* horse5.png */,
+				A1E58C1326627A4D00223E3E /* horse6.png */,
+				A1E58C1526627A4D00223E3E /* horse7.png */,
+				A1E58C0C26627A4D00223E3E /* horse8.png */,
+				A1E58C0E26627A4D00223E3E /* horse9.png */,
+				A1E58C1226627A4D00223E3E /* horse10.png */,
+				A1E58C0F26627A4D00223E3E /* horse11.png */,
+				A1E58C1126627A4D00223E3E /* horse12.png */,
 				A1FBE06C265BDC8100E278E3 /* 서러브레드.png */,
 				A1D86E2C265971030056E1B5 /* 미니어처.png */,
 				A1D86E30265971170056E1B5 /* 포니.png */,
@@ -121,11 +167,26 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		A175A140265A2E5C0090B8BB /* HorseControll */ = {
+		A1CC620C26600CA800AB3D1D /* CellAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A1CC620F26600D3900AB3D1D /* UITableView+Ext.swift */,
+				A1CC620926600CA200AB3D1D /* Animations.swift */,
+				A1CC620826600CA200AB3D1D /* Animator.swift */,
+				A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */,
 			);
-			path = HorseControll;
+			path = CellAnimation;
+			sourceTree = "<group>";
+		};
+		A1CC6213266011A400AB3D1D /* pageControl */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC62112660119300AB3D1D /* thoroughbredController.swift */,
+				A1CC6214266011BB00AB3D1D /* shireController.swift */,
+				A1CC6216266011D100AB3D1D /* miniatureController.swift */,
+				A1CC6218266011E100AB3D1D /* ponyController.swift */,
+			);
+			path = pageControl;
 			sourceTree = "<group>";
 		};
 		A1CE3E3F265BD96E003DE136 /* HorseInfo */ = {
@@ -224,11 +285,9 @@
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
 				A1F269E7264A6ED600A41B21 /* Info.plist */,
+				A1CC620C26600CA800AB3D1D /* CellAnimation */,
 				A12139282655315F00772963 /* Image */,
-				A175A140265A2E5C0090B8BB /* HorseControll */,
-				A175A141265A2E960090B8BB /* horseTableViewControl.swift */,
-				A175A143265A2ED60090B8BB /* horseViewCell.swift */,
-				A1DF063A265A40E1006EC1BC /* horsePageController.swift */,
+				A1CC6213266011A400AB3D1D /* pageControl */,
 			);
 			path = SmartPhoneGameprogrammingTermProject;
 			sourceTree = "<group>";
@@ -291,25 +350,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */,
+				A1E58C1B26627A4D00223E3E /* horse11.png in Resources */,
 				A1ED6CDE265646AD0044CBBB /* shire4.jpg in Resources */,
 				A1ED6CEB265647070044CBBB /* miniature5.jpg in Resources */,
 				A1ED6CCB265645870044CBBB /* pony5.jpg in Resources */,
 				A1FBE06D265BDC8100E278E3 /* 서러브레드.png in Resources */,
 				A1ED6CE9265647070044CBBB /* miniature2.jpg in Resources */,
+				A1E58C1A26627A4D00223E3E /* horse9.png in Resources */,
+				A1E58C1C26627A4D00223E3E /* horse4.png in Resources */,
 				A1ED6CD4265646030044CBBB /* thoroughbred4.jpg in Resources */,
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
 				A1ED6CD6265646030044CBBB /* thoroughbred5.jpg in Resources */,
+				A1E58C1E26627A4D00223E3E /* horse10.png in Resources */,
+				A1E58C2126627A4D00223E3E /* horse7.png in Resources */,
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
 				A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */,
 				A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */,
 				A1ED6CEA265647070044CBBB /* miniature3.jpg in Resources */,
 				A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */,
+				A1E58C2026627A4D00223E3E /* horse3.png in Resources */,
+				A1E58C1F26627A4D00223E3E /* horse6.png in Resources */,
 				A1F269E3264A6ED600A41B21 /* Assets.xcassets in Resources */,
+				A1E58C1926627A4D00223E3E /* horse1.png in Resources */,
 				A1ED6CCC265645870044CBBB /* pony2.jpg in Resources */,
 				A1ED6CEC265647070044CBBB /* miniature1.jpg in Resources */,
 				A1ED6CE2265646AD0044CBBB /* shire1.jpg in Resources */,
+				A1E58C1D26627A4D00223E3E /* horse12.png in Resources */,
 				A121392A265532A400772963 /* Title.png in Resources */,
 				A1ED6CDF265646AD0044CBBB /* shire3.jpg in Resources */,
+				A1E58C1826627A4D00223E3E /* horse8.png in Resources */,
+				A1E58C1626627A4D00223E3E /* horse5.png in Resources */,
 				A1D86E31265971170056E1B5 /* 포니.png in Resources */,
 				A1F269E1264A6ED500A41B21 /* Main.storyboard in Resources */,
 				A1ED6CC9265645870044CBBB /* pony3.jpg in Resources */,
@@ -317,6 +387,7 @@
 				A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */,
 				A1ED6CD7265646030044CBBB /* thoroughbred1.jpg in Resources */,
 				A1ED6CE0265646AD0044CBBB /* shire5.jpg in Resources */,
+				A1E58C1726627A4D00223E3E /* horse2.png in Resources */,
 				A1ED6CE1265646AD0044CBBB /* shire2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,18 +399,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */,
 				A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */,
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
-				A175A144265A2ED60090B8BB /* horseViewCell.swift in Sources */,
+				A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
 				A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */,
+				A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */,
+				A1CC621026600D3900AB3D1D /* UITableView+Ext.swift in Sources */,
+				A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
-				A1DF063B265A40E1006EC1BC /* horsePageController.swift in Sources */,
-				A175A142265A2E960090B8BB /* horseTableViewControl.swift in Sources */,
 				A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
+				A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */,
 				A1CE3E45265BD97D003DE136 /* PlantTableViewController.swift in Sources */,
+				A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */,
 				A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */,
+				A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
