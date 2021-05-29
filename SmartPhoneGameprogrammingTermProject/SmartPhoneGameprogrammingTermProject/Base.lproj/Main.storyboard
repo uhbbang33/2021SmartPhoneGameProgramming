@@ -385,13 +385,14 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="mic" catalog="system" id="39C-mL-JWW">
                                 <connections>
-                                    <action selector="searchButtonPressed:" destination="JpL-5Q-T72" id="fOQ-ef-3o5"/>
+                                    <action selector="micButtonPressed:" destination="JpL-5Q-T72" id="kYM-OG-CGV"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="horseInfoTBData" destination="Msy-nG-rm7" id="giI-o6-uKy"/>
+                        <outlet property="micButton" destination="39C-mL-JWW" id="taJ-vL-vJe"/>
                         <outlet property="searchKeyword" destination="llx-Rf-lD1" id="gjd-X3-MQa"/>
                     </connections>
                 </tableViewController>
