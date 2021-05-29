@@ -19,33 +19,32 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
     
     var hrName = ""
     var hrName_utf8 = ""
+    
+    var keyword = ""
+    var keyword_utf8 = ""
 
-//    @IBAction func doneToTableViewController(segue: segueToHorseInfoDetail){
-//    }
-    
-    @IBAction func doneToTableViewController(segue: UIStoryboardSegue){
-        
-    }
-    
     @IBOutlet weak var horseInfoTBData: UITableView!
+    
+    @IBOutlet weak var searchKeyword: UITextField!
+    
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        keyword = searchKeyword.text!
+        keyword_utf8 = keyword.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+        
+        beginParsing()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
-        
     }
     
-    let addr = "http://apis.data.go.kr/B551015/API8/raceHorseInfo"
-    let key = "cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D"
-    let others = "?numOfRows=10&pageNo=1"
-
-    var url : String?
+    let url = "http://apis.data.go.kr/B551015/API8/raceHorseInfo?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=20&pageNo=1&hr_name="
     
     func beginParsing()
     {
-        url = addr + others + "&serviceKey=" + key
         posts = []
-        parser = XMLParser(contentsOf: (URL(string: addr + others + "&serviceKey=" + key ))!)!
+        parser = XMLParser(contentsOf: (URL(string: url + keyword_utf8 ))!)!
         parser.delegate = self
         parser.parse()
         horseInfoTBData!.reloadData()
@@ -99,7 +98,20 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
         return cell
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
+//    func authorizeSR(){
+//        SFSpeechRecognizer.requestAuthorization { authStatus in
+//            OperationQueue.main.addOperation{
+//                switch authStatus{
+//                case .authorized:
+//                    self.transcribeButton.isEnabled = true
+//                }
+//            }
+//        }
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -107,9 +119,11 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
                 hrName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "name") as! NSString as String
+                
                 hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+                
                 if let horseInfoDetailTableViewController = segue.destination as? HorseInfoDetailTableViewController{
-                    horseInfoDetailTableViewController.url = url! + "&hr_name=" + hrName_utf8
+                    horseInfoDetailTableViewController.url = url + hrName_utf8
                 }
             }
         }

@@ -326,10 +326,10 @@
             </objects>
             <point key="canvasLocation" x="1934.7826086956522" y="-356.25"/>
         </scene>
-        <!--Plant Table View Controller-->
+        <!--Horse Info Table View Controller-->
         <scene sceneID="4Fx-zt-CMH">
             <objects>
-                <tableViewController id="JpL-5Q-T72" customClass="PlantTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JpL-5Q-T72" customClass="HorseInfoTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Msy-nG-rm7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,7 +359,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cBz-v9-0tK" kind="show" identifier="SegueToHorseDetail" id="62P-8B-vVX"/>
+                                    <segue destination="QOW-Fi-yuo" kind="show" identifier="segueToHorseDetail" id="3DQ-kz-a6Q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -372,50 +372,57 @@
                     <navigationItem key="navigationItem" id="xW9-b5-aTW">
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="llx-Rf-lD1">
-                            <rect key="frame" x="107" y="5" width="200" height="34"/>
+                            <rect key="frame" x="102.5" y="5" width="200" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="rN9-Nz-Aln">
-                            <connections>
-                                <action selector="searchButtonPressed:" destination="JpL-5Q-T72" id="IgG-KC-A4Q"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="rN9-Nz-Aln">
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="JpL-5Q-T72" id="IgG-KC-A4Q"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="mic" catalog="system" id="39C-mL-JWW">
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="JpL-5Q-T72" id="fOQ-ef-3o5"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="plantInfoTbData" destination="Msy-nG-rm7" id="Tzc-0b-Ibe"/>
-                        <outlet property="searchKeyword" destination="llx-Rf-lD1" id="11I-JS-ko0"/>
+                        <outlet property="horseInfoTBData" destination="Msy-nG-rm7" id="giI-o6-uKy"/>
+                        <outlet property="searchKeyword" destination="llx-Rf-lD1" id="gjd-X3-MQa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4d8-IH-DsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1935" y="-1064"/>
         </scene>
-        <!--Plant Detail Table View Controller-->
-        <scene sceneID="vGY-a4-bt4">
+        <!--Horse Info Detail Table View Controller-->
+        <scene sceneID="xuZ-n7-j1L">
             <objects>
-                <tableViewController id="cBz-v9-0tK" customClass="PlantDetailTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J9P-en-iq5">
+                <tableViewController id="QOW-Fi-yuo" customClass="HorseInfoDetailTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iOX-cs-SeQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" textLabel="tZk-H9-NNP" detailTextLabel="4eo-MU-vFY" style="IBUITableViewCellStyleValue1" id="GnA-Mr-q2y">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" textLabel="ENz-md-ix4" detailTextLabel="NXK-vC-fdD" style="IBUITableViewCellStyleValue1" id="mXG-Oh-EVc">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="52.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GnA-Mr-q2y" id="gBd-5k-60o">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mXG-Oh-EVc" id="dtE-Eu-r6k">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tZk-H9-NNP">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ENz-md-ix4">
                                             <rect key="frame" x="20" y="13" width="41" height="26.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4eo-MU-vFY">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NXK-vC-fdD">
                                             <rect key="frame" x="339.5" y="13" width="54.5" height="26.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -427,18 +434,18 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="cBz-v9-0tK" id="4EV-Iz-9QR"/>
-                            <outlet property="delegate" destination="cBz-v9-0tK" id="XVf-Ws-NRE"/>
+                            <outlet property="dataSource" destination="QOW-Fi-yuo" id="GgR-2b-jdP"/>
+                            <outlet property="delegate" destination="QOW-Fi-yuo" id="qs4-W7-ng9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oKH-2T-Nrh"/>
+                    <navigationItem key="navigationItem" id="JLd-oa-ebW"/>
                     <connections>
-                        <outlet property="detailTableView" destination="J9P-en-iq5" id="iF1-Bp-pyh"/>
+                        <outlet property="detailTableView" destination="iOX-cs-SeQ" id="cTO-L5-xab"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J6r-0W-snI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5f-iP-zaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2861" y="-1064"/>
+            <point key="canvasLocation" x="2750" y="-1068"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="9a5-Gf-MNh">
@@ -476,6 +483,7 @@
     </scenes>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mic" catalog="system" width="108" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
