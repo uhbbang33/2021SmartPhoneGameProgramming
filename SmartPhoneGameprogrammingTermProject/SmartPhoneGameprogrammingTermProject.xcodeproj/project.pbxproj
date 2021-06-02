@@ -38,6 +38,7 @@
 		A1ED6CEC265647070044CBBB /* miniature1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE7265647070044CBBB /* miniature1.jpg */; };
 		A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE8265647070044CBBB /* miniature4.jpg */; };
 		A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED6CEF265649D30044CBBB /* TextViewConerRound.swift */; };
+		A1F048082667B5D60020DFE1 /* HorseBackRidingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F048072667B5D60020DFE1 /* HorseBackRidingTableViewController.swift */; };
 		A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269D9264A6ED500A41B21 /* AppDelegate.swift */; };
 		A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */; };
 		A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DD264A6ED500A41B21 /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 		A1ED6CE7265647070044CBBB /* miniature1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miniature1.jpg; sourceTree = "<group>"; };
 		A1ED6CE8265647070044CBBB /* miniature4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miniature4.jpg; sourceTree = "<group>"; };
 		A1ED6CEF265649D30044CBBB /* TextViewConerRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewConerRound.swift; sourceTree = "<group>"; };
+		A1F048072667B5D60020DFE1 /* HorseBackRidingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseBackRidingTableViewController.swift; sourceTree = "<group>"; };
 		A1F269D6264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPhoneGameprogrammingTermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F269D9264A6ED500A41B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */,
 				A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */,
 				A1CE3E43265BD97D003DE136 /* MapViewController.swift */,
+				A1F048072667B5D60020DFE1 /* HorseBackRidingTableViewController.swift */,
 			);
 			path = HorseInfo;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
 				A175A144265A2ED60090B8BB /* horseViewCell.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
+				A1F048082667B5D60020DFE1 /* HorseBackRidingTableViewController.swift in Sources */,
 				A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
 				A1DF063B265A40E1006EC1BC /* horsePageController.swift in Sources */,

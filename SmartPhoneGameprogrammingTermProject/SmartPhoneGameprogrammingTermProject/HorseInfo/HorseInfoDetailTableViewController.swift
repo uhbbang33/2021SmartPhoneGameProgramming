@@ -177,6 +177,5 @@ class HorseInfoDetailTableViewController: UITableViewController, XMLParserDelega
         cell.detailTextLabel?.text = posts[indexPath.row]
         return cell
     }
-
 }
 
