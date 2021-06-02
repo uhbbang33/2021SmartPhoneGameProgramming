@@ -17,19 +17,19 @@ class HorsetableViewController: UITableViewController {
         super.viewDidLoad()
         
         setupImageViewAnimation()
-        iconImage.animationRepeatCount = 1
+        iconImage.animationRepeatCount = 10
         iconImage.animationDuration = 1.0
         iconImage.startAnimating()
         
-        shireicon.animationRepeatCount = 1
+        shireicon.animationRepeatCount = 10
         shireicon.animationDuration = 1.2
         shireicon.startAnimating()
         
-        miniatureicon.animationRepeatCount = 1
+        miniatureicon.animationRepeatCount = 10
         miniatureicon.animationDuration = 1.4
         miniatureicon.startAnimating()
         
-        ponyicon.animationRepeatCount = 1
+        ponyicon.animationRepeatCount = 10
         ponyicon.animationDuration = 1.6
         ponyicon.startAnimating()
     }

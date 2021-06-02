@@ -10,6 +10,7 @@ import UIKit
 class miniatureController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var nameLabel: UILabel!
     
 
     
@@ -38,6 +39,14 @@ class miniatureController: UIViewController, UIScrollViewDelegate {
             let pagesScrollViewSize = scrollView.frame.size
             scrollView.contentSize = CGSize(width: pagesScrollViewSize.width * CGFloat(pageImages.count), height: pagesScrollViewSize.height)
             
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+                self.nameLabel.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+                },
+                completion: { _ in
+                UIView.animate(withDuration: 1.0) {
+                    self.nameLabel.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+                  }
+                })
             
             loadVisblePages()
         }
