@@ -57,6 +57,8 @@
 		A1ED6CEC265647070044CBBB /* miniature1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE7265647070044CBBB /* miniature1.jpg */; };
 		A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE8265647070044CBBB /* miniature4.jpg */; };
 		A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED6CEF265649D30044CBBB /* TextViewConerRound.swift */; };
+		A1F0480E2667CA0A0020DFE1 /* HorseScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */; };
+		A1F048112667CCBA0020DFE1 /* HorseScoreGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F048102667CCBA0020DFE1 /* HorseScoreGraphViewController.swift */; };
 		A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269D9264A6ED500A41B21 /* AppDelegate.swift */; };
 		A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */; };
 		A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DD264A6ED500A41B21 /* ViewController.swift */; };
@@ -117,6 +119,8 @@
 		A1ED6CE7265647070044CBBB /* miniature1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miniature1.jpg; sourceTree = "<group>"; };
 		A1ED6CE8265647070044CBBB /* miniature4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miniature4.jpg; sourceTree = "<group>"; };
 		A1ED6CEF265649D30044CBBB /* TextViewConerRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewConerRound.swift; sourceTree = "<group>"; };
+		A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseScoreTableViewController.swift; sourceTree = "<group>"; };
+		A1F048102667CCBA0020DFE1 /* HorseScoreGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseScoreGraphViewController.swift; sourceTree = "<group>"; };
 		A1F269D6264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPhoneGameprogrammingTermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F269D9264A6ED500A41B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +261,15 @@
 			path = TextViewControll;
 			sourceTree = "<group>";
 		};
+		A1F0480F2667CC5B0020DFE1 /* HorseScore */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */,
+				A1F048102667CCBA0020DFE1 /* HorseScoreGraphViewController.swift */,
+			);
+			path = HorseScore;
+			sourceTree = "<group>";
+		};
 		A1F269CD264A6ED500A41B21 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +289,7 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1F0480F2667CC5B0020DFE1 /* HorseScore */,
 				A1CE3E3F265BD96E003DE136 /* HorseInfo */,
 				A1F269D9264A6ED500A41B21 /* AppDelegate.swift */,
 				A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */,
@@ -405,10 +419,12 @@
 				A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
 				A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */,
+				A1F048112667CCBA0020DFE1 /* HorseScoreGraphViewController.swift in Sources */,
 				A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */,
 				A1CC621026600D3900AB3D1D /* UITableView+Ext.swift in Sources */,
 				A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
+				A1F0480E2667CA0A0020DFE1 /* HorseScoreTableViewController.swift in Sources */,
 				A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
 				A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */,

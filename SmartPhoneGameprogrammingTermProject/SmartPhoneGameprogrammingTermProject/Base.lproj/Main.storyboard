@@ -114,7 +114,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="JNp-tm-q2A" kind="show" id="b8X-AH-Xhc"/>
+                                    <segue destination="Viu-6s-JJC" kind="show" id="McS-UK-UgE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -561,21 +561,49 @@
             </objects>
             <point key="canvasLocation" x="4813.04347826087" y="142.63392857142856"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Lrh-hm-jcS">
+        <!--Horse Score Table View Controller-->
+        <scene sceneID="NUB-bY-Kwb">
             <objects>
-                <viewController id="JNp-tm-q2A" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XdN-tU-IrC">
+                <tableViewController id="Viu-6s-JJC" customClass="HorseScoreTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rGv-UD-wKX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="LIw-dH-MZr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SPw-iB-YfS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lwS-Qh-z54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="im1-dU-82X" style="IBUITableViewCellStyleDefault" id="cd1-by-Mgy">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="52.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cd1-by-Mgy" id="LgZ-1N-CrZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="im1-dU-82X">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="52.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="eWE-VB-LZ5" kind="show" identifier="SegueToGraph" id="VH9-z6-ij6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Viu-6s-JJC" id="0tw-Wx-J0g"/>
+                            <outlet property="delegate" destination="Viu-6s-JJC" id="jmv-jQ-IZi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5LW-Mc-BuH"/>
+                    <connections>
+                        <outlet property="horseScoreTableView" destination="rGv-UD-wKX" id="mKt-Kv-abW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbc-2i-BHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="1450"/>
+            <point key="canvasLocation" x="1755" y="1458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w0u-Wd-Ys9">
@@ -587,10 +615,11 @@
                         <viewLayoutGuide key="safeArea" id="SEj-oc-mXt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cCg-r1-Xb1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCj-IA-ii0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="1562"/>
+            <point key="canvasLocation" x="2603" y="1458"/>
         </scene>
         <!--Plant Table View Controller-->
         <scene sceneID="4Fx-zt-CMH">
