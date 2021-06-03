@@ -131,8 +131,6 @@
 			children = (
 				A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */,
 				A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */,
-				A1CE3E43265BD97D003DE136 /* MapViewController.swift */,
-				A1F048072667B5D60020DFE1 /* HorseBackRidingTableViewController.swift */,
 			);
 			path = HorseInfo;
 			sourceTree = "<group>";
@@ -193,6 +191,15 @@
 			path = TextViewControll;
 			sourceTree = "<group>";
 		};
+		A1F048122667CF210020DFE1 /* HorseBackRidingInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A1CE3E43265BD97D003DE136 /* MapViewController.swift */,
+				A1F048072667B5D60020DFE1 /* HorseBackRidingTableViewController.swift */,
+			);
+			path = HorseBackRidingInfo;
+			sourceTree = "<group>";
+		};
 		A1F269CD264A6ED500A41B21 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +219,7 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1F048122667CF210020DFE1 /* HorseBackRidingInfo */,
 				A1CE3E3F265BD96E003DE136 /* HorseInfo */,
 				A1F269D9264A6ED500A41B21 /* AppDelegate.swift */,
 				A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */,

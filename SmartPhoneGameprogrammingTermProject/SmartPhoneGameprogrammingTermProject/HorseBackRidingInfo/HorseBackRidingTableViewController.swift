@@ -14,7 +14,7 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
     var elements = NSMutableDictionary()
     var element = NSString()
     
-    var horseBackRidingName = NSMutableString()
+    var bsshNm = NSMutableString()
     
     @IBOutlet var horseBackRidingTableView: UITableView!
     
@@ -28,7 +28,7 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
     func beginParsing()
     {
         posts = []
-        parser = XMLParser(contentsOf: (URL(string: url ))!)!
+        parser = XMLParser(contentsOf: (URL(string: url))!)!
         parser.delegate = self
         parser.parse()
         horseBackRidingTableView!.reloadData()
@@ -40,23 +40,23 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
         {
             elements = NSMutableDictionary()
             elements = [:]
-            horseBackRidingName = NSMutableString()
-            horseBackRidingName = ""
+            bsshNm = NSMutableString()
+            bsshNm = ""
         }
     }
 
     func parser(_ parser: XMLParser, foundCharacters string: String){
         if element.isEqual(to: "bsshNm"){
-            horseBackRidingName.append(string)
+            bsshNm.append(string)
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
     {
         if (elementName as NSString).isEqual(to: "item"){
-            if !horseBackRidingName.isEqual(nil)
+            if !bsshNm.isEqual(nil)
             {
-                elements.setObject(horseBackRidingName, forKey: "name" as NSCopying)
+                elements.setObject(bsshNm, forKey: "bsshNm" as NSCopying)
             }
             posts.add(elements)
         }
@@ -73,8 +73,22 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "name") as! NSString as String
+        cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "bsshNm") as! NSString as String
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "SegueToMapViewController" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPath(for: cell)
+                
+                if let mapViewController = segue.destination as? MapViewController
+                {
+                    mapViewController.bsshNm = cell.textLabel?.text as! NSMutableString
+                }
+            }
+        }
     }
 }

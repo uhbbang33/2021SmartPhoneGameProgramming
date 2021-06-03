@@ -502,7 +502,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="NNc-fz-v2L" kind="show" id="RQv-Yx-Nh5"/>
+                                    <segue destination="NNc-fz-v2L" kind="show" identifier="SegueToMapViewController" id="RQv-Yx-Nh5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -537,7 +537,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="awQ-gb-cT4" style="IBUITableViewCellStyleDefault" id="AAP-GA-m0U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="awQ-gb-cT4" detailTextLabel="6QF-8r-F4E" style="IBUITableViewCellStyleValue1" id="AAP-GA-m0U" customClass="HorseBackRidingDetailTableViewCell" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="374" height="52.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AAP-GA-m0U" id="cOw-ql-N4e">
@@ -545,7 +545,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="awQ-gb-cT4">
-                                                    <rect key="frame" x="20" y="0.0" width="334" height="52.5"/>
+                                                    <rect key="frame" x="20" y="13" width="41" height="26.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6QF-8r-F4E">
+                                                    <rect key="frame" x="299.5" y="13" width="54.5" height="26.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -563,6 +570,7 @@
                     <navigationItem key="navigationItem" id="ZYi-u5-nFo"/>
                     <connections>
                         <outlet property="map" destination="gv3-uW-dIG" id="qwe-dX-cXw"/>
+                        <outlet property="tb" destination="6W9-s2-PN8" id="lz2-nd-K1l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APR-8x-Pp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
