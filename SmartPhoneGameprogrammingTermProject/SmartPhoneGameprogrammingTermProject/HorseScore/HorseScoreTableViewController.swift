@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     
     var parser = XMLParser()
@@ -16,8 +17,21 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet var horseScoreTableView: UITableView!
     
     var horseName = NSMutableString()
+    var horseNum = NSMutableString()
     
-    let url = "http://apis.data.go.kr/B551015/API15/raceHorseResult?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=20"
+    var hrName = ""
+    var hrName_utf8 = ""
+    
+    
+    var keyword = ""
+    var keyword_utf8 = ""
+    
+    var hrNum = ""
+    
+    @IBOutlet weak var numLabel: UILabel!
+    
+    
+    let url = "http://apis.data.go.kr/B551015/API15/raceHorseResult?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=300&hr_name="
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +41,7 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     func beginParsing()
     {
         posts = []
-        parser = XMLParser(contentsOf: (URL(string: url))!)!
+        parser = XMLParser(contentsOf: (URL(string: url + keyword_utf8))!)!
         parser.delegate = self
         parser.parse()
         horseScoreTableView!.reloadData()
@@ -41,12 +55,18 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
             elements = [:]
             horseName = NSMutableString()
             horseName = ""
+            horseNum = NSMutableString()
+            horseNum = ""
         }
     }
 
     func parser(_ parser: XMLParser, foundCharacters string: String){
         if element.isEqual(to: "hrName"){
             horseName.append(string)
+        }
+        else if element.isEqual(to: "hrNo")
+        {
+            horseNum.append(string)
         }
     }
     
@@ -55,7 +75,11 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
         if (elementName as NSString).isEqual(to: "item"){
             if !horseName.isEqual(nil)
             {
-                elements.setObject(horseName, forKey: "name" as NSCopying)
+                elements.setObject(horseName, forKey: "hrName" as NSCopying)
+            }
+            if !horseNum.isEqual(nil)
+            {
+                elements.setObject(horseNum, forKey: "hrNo" as NSCopying)
             }
             posts.add(elements)
         }
@@ -72,17 +96,30 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "name") as! NSString as String
+        cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "hrName") as! NSString as String
         
+        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "hrNo") as! NSString as String
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        
         if segue.identifier == "SegueToGraph" {
+            if let cell = sender as? UITableViewCell{
+                let indexPath = tableView.indexPath(for: cell)
+            
+                hrName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "hrName") as! NSString as String
+                
+                hrNum = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "hrNo") as! NSString as String
+                
+                hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+            
+                
                 if let horseScoreGraphViewController = segue.destination as? HorseScoreGraphViewController{
-                    horseScoreGraphViewController.url = url
+                    horseScoreGraphViewController.url = url + hrName_utf8
                 }
+            }
         }
     }
 }

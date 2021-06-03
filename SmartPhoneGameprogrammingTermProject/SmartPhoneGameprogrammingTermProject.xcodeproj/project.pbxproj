@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A121392A265532A400772963 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1213929265532A400772963 /* Title.png */; };
+		A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8A2667E13A001E8383 /* SnowfallChart.swift */; };
+		A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8B2667E13A001E8383 /* TemperatureChart.swift */; };
+		A199FE8F2667E13A001E8383 /* PrecipitationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */; };
+		A199FE932667E146001E8383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE902667E145001E8383 /* ContentView.swift */; };
+		A199FE942667E146001E8383 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE912667E145001E8383 /* DoubleExtension.swift */; };
+		A199FE952667E146001E8383 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE922667E145001E8383 /* MapView.swift */; };
+		A199FE9A2667E151001E8383 /* weather-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = A199FE962667E151001E8383 /* weather-data.csv */; };
+		A199FE9B2667E151001E8383 /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE972667E151001E8383 /* WeatherStation.swift */; };
+		A199FE9C2667E151001E8383 /* DayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE982667E151001E8383 /* DayInfo.swift */; };
+		A199FE9D2667E151001E8383 /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE992667E151001E8383 /* WeatherInformation.swift */; };
+		A199FEA02667E186001E8383 /* StationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE9E2667E186001E8383 /* StationInfo.swift */; };
+		A199FEA12667E186001E8383 /* StationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE9F2667E186001E8383 /* StationHeader.swift */; };
+		A199FEA52667E192001E8383 /* SnowfallTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FEA22667E191001E8383 /* SnowfallTab.swift */; };
+		A199FEA62667E192001E8383 /* TemperatureTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FEA32667E192001E8383 /* TemperatureTab.swift */; };
+		A199FEA72667E192001E8383 /* PrecipitationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FEA42667E192001E8383 /* PrecipitationTab.swift */; };
+		A199FEAB2667EF8B001E8383 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A199FEAA2667EF8B001E8383 /* WebKit.framework */; };
+		A199FEAC2667F850001E8383 /* HorseScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */; };
 		A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620826600CA200AB3D1D /* Animator.swift */; };
 		A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620926600CA200AB3D1D /* Animations.swift */; };
 		A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */; };
@@ -57,7 +74,6 @@
 		A1ED6CEC265647070044CBBB /* miniature1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE7265647070044CBBB /* miniature1.jpg */; };
 		A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CE8265647070044CBBB /* miniature4.jpg */; };
 		A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED6CEF265649D30044CBBB /* TextViewConerRound.swift */; };
-		A1F0480E2667CA0A0020DFE1 /* HorseScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */; };
 		A1F048112667CCBA0020DFE1 /* HorseScoreGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F048102667CCBA0020DFE1 /* HorseScoreGraphViewController.swift */; };
 		A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269D9264A6ED500A41B21 /* AppDelegate.swift */; };
 		A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */; };
@@ -70,6 +86,22 @@
 
 /* Begin PBXFileReference section */
 		A1213929265532A400772963 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		A199FE8A2667E13A001E8383 /* SnowfallChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowfallChart.swift; sourceTree = "<group>"; };
+		A199FE8B2667E13A001E8383 /* TemperatureChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureChart.swift; sourceTree = "<group>"; };
+		A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationChart.swift; sourceTree = "<group>"; };
+		A199FE902667E145001E8383 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A199FE912667E145001E8383 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		A199FE922667E145001E8383 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A199FE962667E151001E8383 /* weather-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "weather-data.csv"; sourceTree = "<group>"; };
+		A199FE972667E151001E8383 /* WeatherStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStation.swift; sourceTree = "<group>"; };
+		A199FE982667E151001E8383 /* DayInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfo.swift; sourceTree = "<group>"; };
+		A199FE992667E151001E8383 /* WeatherInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
+		A199FE9E2667E186001E8383 /* StationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfo.swift; sourceTree = "<group>"; };
+		A199FE9F2667E186001E8383 /* StationHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationHeader.swift; sourceTree = "<group>"; };
+		A199FEA22667E191001E8383 /* SnowfallTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowfallTab.swift; sourceTree = "<group>"; };
+		A199FEA32667E192001E8383 /* TemperatureTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureTab.swift; sourceTree = "<group>"; };
+		A199FEA42667E192001E8383 /* PrecipitationTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationTab.swift; sourceTree = "<group>"; };
+		A199FEAA2667EF8B001E8383 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A1CC620826600CA200AB3D1D /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		A1CC620926600CA200AB3D1D /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorsetableViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A199FEAB2667EF8B001E8383 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +202,36 @@
 				A1213929265532A400772963 /* Title.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		A199FEA82667E198001E8383 /* weather */ = {
+			isa = PBXGroup;
+			children = (
+				A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */,
+				A199FE8A2667E13A001E8383 /* SnowfallChart.swift */,
+				A199FE8B2667E13A001E8383 /* TemperatureChart.swift */,
+				A199FE902667E145001E8383 /* ContentView.swift */,
+				A199FE912667E145001E8383 /* DoubleExtension.swift */,
+				A199FE922667E145001E8383 /* MapView.swift */,
+				A199FE982667E151001E8383 /* DayInfo.swift */,
+				A199FE962667E151001E8383 /* weather-data.csv */,
+				A199FE992667E151001E8383 /* WeatherInformation.swift */,
+				A199FE972667E151001E8383 /* WeatherStation.swift */,
+				A199FE9F2667E186001E8383 /* StationHeader.swift */,
+				A199FE9E2667E186001E8383 /* StationInfo.swift */,
+				A199FEA42667E192001E8383 /* PrecipitationTab.swift */,
+				A199FEA22667E191001E8383 /* SnowfallTab.swift */,
+				A199FEA32667E192001E8383 /* TemperatureTab.swift */,
+			);
+			path = weather;
+			sourceTree = "<group>";
+		};
+		A199FEA92667EF8B001E8383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A199FEAA2667EF8B001E8383 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A1CC620C26600CA800AB3D1D /* CellAnimation */ = {
@@ -275,6 +338,7 @@
 			children = (
 				A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */,
 				A1F269D7264A6ED500A41B21 /* Products */,
+				A199FEA92667EF8B001E8383 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,6 +353,7 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A199FEA82667E198001E8383 /* weather */,
 				A1F0480F2667CC5B0020DFE1 /* HorseScore */,
 				A1CE3E3F265BD96E003DE136 /* HorseInfo */,
 				A1F269D9264A6ED500A41B21 /* AppDelegate.swift */,
@@ -382,6 +447,7 @@
 				A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */,
 				A1ED6CEA265647070044CBBB /* miniature3.jpg in Resources */,
 				A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */,
+				A199FE9A2667E151001E8383 /* weather-data.csv in Resources */,
 				A1E58C2026627A4D00223E3E /* horse3.png in Resources */,
 				A1E58C1F26627A4D00223E3E /* horse6.png in Resources */,
 				A1F269E3264A6ED600A41B21 /* Assets.xcassets in Resources */,
@@ -413,22 +479,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A199FE942667E146001E8383 /* DoubleExtension.swift in Sources */,
+				A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */,
 				A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */,
+				A199FEA52667E192001E8383 /* SnowfallTab.swift in Sources */,
 				A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */,
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
 				A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
 				A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */,
 				A1F048112667CCBA0020DFE1 /* HorseScoreGraphViewController.swift in Sources */,
+				A199FEA02667E186001E8383 /* StationInfo.swift in Sources */,
+				A199FE9D2667E151001E8383 /* WeatherInformation.swift in Sources */,
+				A199FEA12667E186001E8383 /* StationHeader.swift in Sources */,
 				A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */,
 				A1CC621026600D3900AB3D1D /* UITableView+Ext.swift in Sources */,
+				A199FE8F2667E13A001E8383 /* PrecipitationChart.swift in Sources */,
+				A199FE952667E146001E8383 /* MapView.swift in Sources */,
+				A199FE9B2667E151001E8383 /* WeatherStation.swift in Sources */,
 				A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */,
+				A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */,
+				A199FEA62667E192001E8383 /* TemperatureTab.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
-				A1F0480E2667CA0A0020DFE1 /* HorseScoreTableViewController.swift in Sources */,
 				A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
+				A199FE932667E146001E8383 /* ContentView.swift in Sources */,
+				A199FE9C2667E151001E8383 /* DayInfo.swift in Sources */,
 				A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */,
 				A1CE3E45265BD97D003DE136 /* PlantTableViewController.swift in Sources */,
+				A199FEAC2667F850001E8383 /* HorseScoreTableViewController.swift in Sources */,
+				A199FEA72667E192001E8383 /* PrecipitationTab.swift in Sources */,
 				A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */,
 				A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */,
 				A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */,
