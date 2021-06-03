@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A121392A265532A400772963 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1213929265532A400772963 /* Title.png */; };
 		A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8A2667E13A001E8383 /* SnowfallChart.swift */; };
 		A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8B2667E13A001E8383 /* TemperatureChart.swift */; };
 		A199FE8F2667E13A001E8383 /* PrecipitationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */; };
@@ -38,6 +37,7 @@
 		A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */; };
 		A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E43265BD97D003DE136 /* MapViewController.swift */; };
 		A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */; };
+		A1D11F7626690C48001A625C /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D11F7526690C48001A625C /* Title.png */; };
 		A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2C265971030056E1B5 /* 미니어처.png */; };
 		A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2E2659710C0056E1B5 /* 샤이어.png */; };
 		A1D86E31265971170056E1B5 /* 포니.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E30265971170056E1B5 /* 포니.png */; };
@@ -85,7 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1213929265532A400772963 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
 		A199FE8A2667E13A001E8383 /* SnowfallChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowfallChart.swift; sourceTree = "<group>"; };
 		A199FE8B2667E13A001E8383 /* TemperatureChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureChart.swift; sourceTree = "<group>"; };
 		A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationChart.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E43265BD97D003DE136 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailTableViewController.swift; sourceTree = "<group>"; };
+		A1D11F7526690C48001A625C /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = ../../../../Title.png; sourceTree = "<group>"; };
 		A1D86E2C265971030056E1B5 /* 미니어처.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "미니어처.png"; sourceTree = "<group>"; };
 		A1D86E2E2659710C0056E1B5 /* 샤이어.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "샤이어.png"; sourceTree = "<group>"; };
 		A1D86E30265971170056E1B5 /* 포니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "포니.png"; sourceTree = "<group>"; };
@@ -199,7 +199,6 @@
 				A1ED6CD82656460C0044CBBB /* thoroughbred */,
 				A1ED6CCD2656458A0044CBBB /* pony */,
 				A1ED6CEE2656470C0044CBBB /* miniature */,
-				A1213929265532A400772963 /* Title.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -360,6 +359,7 @@
 				A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */,
 				A1F269DD264A6ED500A41B21 /* ViewController.swift */,
 				A1F269DF264A6ED500A41B21 /* Main.storyboard */,
+				A1D11F7526690C48001A625C /* Title.png */,
 				A1ED6CF1265649E00044CBBB /* TextViewControll */,
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
@@ -441,6 +441,7 @@
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
 				A1ED6CD6265646030044CBBB /* thoroughbred5.jpg in Resources */,
 				A1E58C1E26627A4D00223E3E /* horse10.png in Resources */,
+				A1D11F7626690C48001A625C /* Title.png in Resources */,
 				A1E58C2126627A4D00223E3E /* horse7.png in Resources */,
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
 				A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */,
@@ -456,7 +457,6 @@
 				A1ED6CEC265647070044CBBB /* miniature1.jpg in Resources */,
 				A1ED6CE2265646AD0044CBBB /* shire1.jpg in Resources */,
 				A1E58C1D26627A4D00223E3E /* horse12.png in Resources */,
-				A121392A265532A400772963 /* Title.png in Resources */,
 				A1ED6CDF265646AD0044CBBB /* shire3.jpg in Resources */,
 				A1E58C1826627A4D00223E3E /* horse8.png in Resources */,
 				A1E58C1626627A4D00223E3E /* horse5.png in Resources */,

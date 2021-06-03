@@ -55,18 +55,13 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
             elements = [:]
             horseName = NSMutableString()
             horseName = ""
-            horseNum = NSMutableString()
-            horseNum = ""
+
         }
     }
 
     func parser(_ parser: XMLParser, foundCharacters string: String){
         if element.isEqual(to: "hrName"){
             horseName.append(string)
-        }
-        else if element.isEqual(to: "hrNo")
-        {
-            horseNum.append(string)
         }
     }
     
@@ -76,10 +71,6 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
             if !horseName.isEqual(nil)
             {
                 elements.setObject(horseName, forKey: "hrName" as NSCopying)
-            }
-            if !horseNum.isEqual(nil)
-            {
-                elements.setObject(horseNum, forKey: "hrNo" as NSCopying)
             }
             posts.add(elements)
         }
@@ -98,7 +89,7 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
         
         cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "hrName") as! NSString as String
         
-        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "hrNo") as! NSString as String
+
         return cell
     }
     
@@ -111,7 +102,7 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
             
                 hrName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "hrName") as! NSString as String
                 
-                hrNum = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "hrNo") as! NSString as String
+
                 
                 hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
             
