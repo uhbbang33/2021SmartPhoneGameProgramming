@@ -32,12 +32,8 @@
 		A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6214266011BB00AB3D1D /* shireController.swift */; };
 		A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6216266011D100AB3D1D /* miniatureController.swift */; };
 		A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6218266011E100AB3D1D /* ponyController.swift */; };
-		A1CE3E45265BD97D003DE136 /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E40265BD97D003DE136 /* PlantTableViewController.swift */; };
 		A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */; };
 		A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */; };
-		A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E43265BD97D003DE136 /* MapViewController.swift */; };
-		A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */; };
-		A1D11F7626690C48001A625C /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D11F7526690C48001A625C /* Title.png */; };
 		A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2C265971030056E1B5 /* 미니어처.png */; };
 		A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2E2659710C0056E1B5 /* 샤이어.png */; };
 		A1D86E31265971170056E1B5 /* 포니.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E30265971170056E1B5 /* 포니.png */; };
@@ -53,6 +49,9 @@
 		A1E58C1F26627A4D00223E3E /* horse6.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1326627A4D00223E3E /* horse6.png */; };
 		A1E58C2026627A4D00223E3E /* horse3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1426627A4D00223E3E /* horse3.png */; };
 		A1E58C2126627A4D00223E3E /* horse7.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E58C1526627A4D00223E3E /* horse7.png */; };
+		A1EAAC952669A31300E818FC /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = A1EAAC942669A31300E818FC /* Title.png */; };
+		A1EAAC9E2669A74E00E818FC /* HorseBackRidingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAAC9D2669A74E00E818FC /* HorseBackRidingTableViewController.swift */; };
+		A1EAACA22669A84C00E818FC /* DetailHorseBackRidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAACA12669A84C00E818FC /* DetailHorseBackRidingViewController.swift */; };
 		A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC3265645860044CBBB /* pony1.jpg */; };
 		A1ED6CC9265645870044CBBB /* pony3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC4265645860044CBBB /* pony3.jpg */; };
 		A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ED6CC5265645870044CBBB /* pony4.jpg */; };
@@ -109,12 +108,8 @@
 		A1CC6214266011BB00AB3D1D /* shireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shireController.swift; sourceTree = "<group>"; };
 		A1CC6216266011D100AB3D1D /* miniatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniatureController.swift; sourceTree = "<group>"; };
 		A1CC6218266011E100AB3D1D /* ponyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ponyController.swift; sourceTree = "<group>"; };
-		A1CE3E40265BD97D003DE136 /* PlantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoDetailTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
-		A1CE3E43265BD97D003DE136 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailTableViewController.swift; sourceTree = "<group>"; };
-		A1D11F7526690C48001A625C /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = ../../../../Title.png; sourceTree = "<group>"; };
 		A1D86E2C265971030056E1B5 /* 미니어처.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "미니어처.png"; sourceTree = "<group>"; };
 		A1D86E2E2659710C0056E1B5 /* 샤이어.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "샤이어.png"; sourceTree = "<group>"; };
 		A1D86E30265971170056E1B5 /* 포니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "포니.png"; sourceTree = "<group>"; };
@@ -130,6 +125,9 @@
 		A1E58C1326627A4D00223E3E /* horse6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse6.png; sourceTree = "<group>"; };
 		A1E58C1426627A4D00223E3E /* horse3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse3.png; sourceTree = "<group>"; };
 		A1E58C1526627A4D00223E3E /* horse7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse7.png; sourceTree = "<group>"; };
+		A1EAAC942669A31300E818FC /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		A1EAAC9D2669A74E00E818FC /* HorseBackRidingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseBackRidingTableViewController.swift; sourceTree = "<group>"; };
+		A1EAACA12669A84C00E818FC /* DetailHorseBackRidingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHorseBackRidingViewController.swift; sourceTree = "<group>"; };
 		A1ED6CC3265645860044CBBB /* pony1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony1.jpg; sourceTree = "<group>"; };
 		A1ED6CC4265645860044CBBB /* pony3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony3.jpg; sourceTree = "<group>"; };
 		A1ED6CC5265645870044CBBB /* pony4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pony4.jpg; sourceTree = "<group>"; };
@@ -260,11 +258,17 @@
 			children = (
 				A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */,
 				A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */,
-				A1CE3E43265BD97D003DE136 /* MapViewController.swift */,
-				A1CE3E44265BD97D003DE136 /* PlantDetailTableViewController.swift */,
-				A1CE3E40265BD97D003DE136 /* PlantTableViewController.swift */,
 			);
 			path = HorseInfo;
+			sourceTree = "<group>";
+		};
+		A1EAAC9C2669A72800E818FC /* HorseBackRidingInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A1EAAC9D2669A74E00E818FC /* HorseBackRidingTableViewController.swift */,
+				A1EAACA12669A84C00E818FC /* DetailHorseBackRidingViewController.swift */,
+			);
+			path = HorseBackRidingInfo;
 			sourceTree = "<group>";
 		};
 		A1ED6CCD2656458A0044CBBB /* pony */ = {
@@ -352,6 +356,7 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1EAAC9C2669A72800E818FC /* HorseBackRidingInfo */,
 				A199FEA82667E198001E8383 /* weather */,
 				A1F0480F2667CC5B0020DFE1 /* HorseScore */,
 				A1CE3E3F265BD96E003DE136 /* HorseInfo */,
@@ -359,7 +364,7 @@
 				A1F269DB264A6ED500A41B21 /* SceneDelegate.swift */,
 				A1F269DD264A6ED500A41B21 /* ViewController.swift */,
 				A1F269DF264A6ED500A41B21 /* Main.storyboard */,
-				A1D11F7526690C48001A625C /* Title.png */,
+				A1EAAC942669A31300E818FC /* Title.png */,
 				A1ED6CF1265649E00044CBBB /* TextViewControll */,
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
@@ -440,8 +445,8 @@
 				A1ED6CD4265646030044CBBB /* thoroughbred4.jpg in Resources */,
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
 				A1ED6CD6265646030044CBBB /* thoroughbred5.jpg in Resources */,
+				A1EAAC952669A31300E818FC /* Title.png in Resources */,
 				A1E58C1E26627A4D00223E3E /* horse10.png in Resources */,
-				A1D11F7626690C48001A625C /* Title.png in Resources */,
 				A1E58C2126627A4D00223E3E /* horse7.png in Resources */,
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
 				A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */,
@@ -482,8 +487,9 @@
 				A199FE942667E146001E8383 /* DoubleExtension.swift in Sources */,
 				A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */,
 				A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */,
+				A1EAAC9E2669A74E00E818FC /* HorseBackRidingTableViewController.swift in Sources */,
 				A199FEA52667E192001E8383 /* SnowfallTab.swift in Sources */,
-				A1CE3E48265BD97D003DE136 /* MapViewController.swift in Sources */,
+				A1EAACA22669A84C00E818FC /* DetailHorseBackRidingViewController.swift in Sources */,
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
 				A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
@@ -501,12 +507,10 @@
 				A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */,
 				A199FEA62667E192001E8383 /* TemperatureTab.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
-				A1CE3E49265BD97D003DE136 /* PlantDetailTableViewController.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
 				A199FE932667E146001E8383 /* ContentView.swift in Sources */,
 				A199FE9C2667E151001E8383 /* DayInfo.swift in Sources */,
 				A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */,
-				A1CE3E45265BD97D003DE136 /* PlantTableViewController.swift in Sources */,
 				A199FEAC2667F850001E8383 /* HorseScoreTableViewController.swift in Sources */,
 				A199FEA72667E192001E8383 /* PrecipitationTab.swift in Sources */,
 				A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */,

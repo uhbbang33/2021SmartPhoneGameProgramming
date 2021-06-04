@@ -1,10 +1,3 @@
-//
-//  HorseBackRidingTableViewController.swift
-//  SmartPhoneGameprogrammingTermProject
-//
-//  Created by  kpugame on 2021/06/02.
-//
-
 import UIKit
 import Foundation
 
@@ -84,7 +77,7 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
                 
-                if let mapViewController = segue.destination as? MapViewController
+                if let mapViewController = segue.destination as? DetailHorseBackRidingViewController
                 {
                     mapViewController.bsshNm = cell.textLabel?.text as! NSMutableString
                 }

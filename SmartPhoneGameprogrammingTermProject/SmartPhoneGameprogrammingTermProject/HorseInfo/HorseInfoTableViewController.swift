@@ -1,10 +1,3 @@
-//
-//  SearchHorseInfo.swift
-//  SmartPhoneGameprogrammingTermProject
-//
-//  Created by  kpugame on 2021/05/19.
-//
-
 import UIKit
 import Foundation
 import Speech
@@ -202,5 +195,3 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
         
     }
 }
-
-

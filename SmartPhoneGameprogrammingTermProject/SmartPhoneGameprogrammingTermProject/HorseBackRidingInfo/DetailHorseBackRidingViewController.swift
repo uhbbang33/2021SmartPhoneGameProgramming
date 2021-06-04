@@ -1,14 +1,8 @@
-//
-//  MapViewController.swift
-//  SmartPhoneGameprogrammingTermProject
-//
-//  Created by  kpugame on 2021/05/24.
-//
 
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, /*XMLParserDelegate,*/ UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate {
+class DetailHorseBackRidingViewController: UIViewController, /*XMLParserDelegate,*/ UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var tb: UITableView!
@@ -286,7 +280,6 @@ class MapViewController: UIViewController, /*XMLParserDelegate,*/ UITableViewDat
 //
 //        tb!.reloadData()
 //    }
-
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -302,3 +295,4 @@ class MapViewController: UIViewController, /*XMLParserDelegate,*/ UITableViewDat
         return cell
     }
 }
+
