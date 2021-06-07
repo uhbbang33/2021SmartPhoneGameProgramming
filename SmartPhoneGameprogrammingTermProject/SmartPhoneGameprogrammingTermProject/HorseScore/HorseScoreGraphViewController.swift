@@ -80,7 +80,7 @@ struct HospitalInfo: View
         TabView
         {
             HospitalChart(posts: self.posts).tabItem({
-                Image(systemName: "cloud.rain")
+                Image(systemName: "gamecontroller")
                 Text("개인 성적 그래프")
             })
         }.frame(width: 400, height: 300)

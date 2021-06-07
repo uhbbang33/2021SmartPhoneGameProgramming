@@ -31,7 +31,7 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet weak var numLabel: UILabel!
     
     
-    let url = "http://apis.data.go.kr/B551015/API15/raceHorseResult?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=300&hr_name="
+    let url = "http://apis.data.go.kr/B551015/API15/raceHorseResult?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=400&hr_name="
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,14 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxh-fM-qX3">
-                                <rect key="frame" x="32" y="238" width="350" height="100"/>
-                                <color key="backgroundColor" red="0.76950214818580864" green="0.53553943334898657" blue="0.23594840744280443" alpha="0.40622280406303146" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="0vB-Fa-oDN"/>
-                                    <constraint firstAttribute="width" constant="350" id="j9a-4z-XH4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxh-fM-qX3">
+                                <rect key="frame" x="26" y="374" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="130" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="말 정보 검색">
                                     <color key="titleColor" red="0.18299739876973264" green="0.1354180477601015" blue="0.042907615558095774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -35,21 +32,18 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.90840935710000004" green="0.81344854830000002" blue="0.68299853799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="JpL-5Q-T72" kind="show" id="Kuh-LH-m31"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-xk-FaL">
-                                <rect key="frame" x="32" y="368" width="350" height="100"/>
-                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="8PJ-eV-nze"/>
-                                    <constraint firstAttribute="width" constant="350" id="Ij5-Dn-VgP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-xk-FaL">
+                                <rect key="frame" x="218" y="374" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="130" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="경주마 성적 정보">
                                     <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -61,22 +55,19 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.90840935710000004" green="0.81344854830000002" blue="0.68299853799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Viu-6s-JJC" kind="show" id="McS-UK-UgE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-4X-he2">
-                                <rect key="frame" x="32" y="498" width="350" height="100"/>
-                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="b2j-wj-4dJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="nBh-oY-66d"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <state key="normal" title="승마장 위치 정보">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-4X-he2">
+                                <rect key="frame" x="26" y="582" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="130" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="승마장 위치정보">
                                     <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -87,21 +78,22 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.90840935710000004" green="0.81344854830000002" blue="0.68299853799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="MxZ-Q9-yq1" kind="show" id="lV0-be-zkN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsZ-07-wtz">
-                                <rect key="frame" x="32" y="628" width="350" height="100"/>
-                                <color key="backgroundColor" red="0.76950214819999996" green="0.53553943329999998" blue="0.2359484074" alpha="0.4062228041" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="Dk9-SZ-Q0t"/>
-                                    <constraint firstAttribute="height" constant="100" id="aQ6-wz-KEb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="008-horse" translatesAutoresizingMaskIntoConstraints="NO" id="fm1-pt-IrU">
+                                <rect key="frame" x="46" y="582" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsZ-07-wtz">
+                                <rect key="frame" x="218" y="582" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="130" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="품종별 앨범">
                                     <color key="titleColor" red="0.18299739879999999" green="0.1354180478" blue="0.042907615560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -113,31 +105,44 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.90840935710000004" green="0.81344854830000002" blue="0.68299853799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="cDC-Ca-rpY" kind="show" id="g3o-mV-7cq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAIN MENU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWz-8B-y9N">
+                                <rect key="frame" x="71" y="221" width="282" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-horse.png" translatesAutoresizingMaskIntoConstraints="NO" id="rrJ-lf-shM">
+                                <rect key="frame" x="46" y="374" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="006-horse" translatesAutoresizingMaskIntoConstraints="NO" id="OT2-EE-sSu">
+                                <rect key="frame" x="238" y="374" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="009-horse" translatesAutoresizingMaskIntoConstraints="NO" id="3ui-j1-LLD">
+                                <rect key="frame" x="238" y="582" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="FsZ-07-wtz" firstAttribute="top" secondItem="yzi-4X-he2" secondAttribute="bottom" constant="30" id="0LD-Eb-d0W"/>
-                            <constraint firstItem="FsZ-07-wtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3pm-on-iiz"/>
-                            <constraint firstItem="yzi-4X-he2" firstAttribute="top" secondItem="cao-xk-FaL" secondAttribute="bottom" constant="30" id="BP0-D5-oEs"/>
-                            <constraint firstItem="wxh-fM-qX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QZX-Fu-DMf"/>
-                            <constraint firstItem="cao-xk-FaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UF8-uS-05Z"/>
-                            <constraint firstItem="wxh-fM-qX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="dsC-5e-3H6"/>
-                            <constraint firstItem="yzi-4X-he2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j29-RL-8hh"/>
-                            <constraint firstItem="cao-xk-FaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaU-6B-KTC"/>
-                            <constraint firstItem="cao-xk-FaL" firstAttribute="top" secondItem="wxh-fM-qX3" secondAttribute="bottom" constant="30" id="txC-PF-CPk"/>
-                            <constraint firstItem="wxh-fM-qX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWE-ov-hbh"/>
-                            <constraint firstItem="FsZ-07-wtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zpY-ac-TKm"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vjL-kL-YbS"/>
+                    <connections>
+                        <outlet property="button1" destination="wxh-fM-qX3" id="2Yl-ty-qxi"/>
+                        <outlet property="button2" destination="cao-xk-FaL" id="Lab-cV-N1K"/>
+                        <outlet property="button3" destination="yzi-4X-he2" id="RTi-2i-x2i"/>
+                        <outlet property="button4" destination="FsZ-07-wtz" id="bbG-Gc-9AA"/>
+                        <outlet property="menuLabel" destination="mWz-8B-y9N" id="m9z-9i-pzg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +179,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.76316855439999998" blue="0.58167593210000001" alpha="0.52690326610000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89271253350000002" green="0.79314440490000004" blue="0.70872074370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="S66-p5-hcw" kind="show" id="BFb-2y-Zhv"/>
                                         </connections>
@@ -199,7 +204,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.77874487635312495" blue="0.64825387552481928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="8oz-Sp-mNq" kind="show" id="meM-Il-MAO"/>
                                         </connections>
@@ -224,7 +229,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.72140675788124997" blue="0.59282785653437498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="M1L-QW-r9H" kind="show" id="3Xi-Js-nxA"/>
                                         </connections>
@@ -249,7 +254,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.67659183424346303" blue="0.54818902048123941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.78872857910000005" green="0.60193284960000004" blue="0.45878443140000003" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="1ka-3w-bB5" kind="show" id="y0g-8T-how"/>
                                         </connections>
@@ -314,7 +319,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-rU-R4e">
                                 <rect key="frame" x="20" y="533" width="374" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87563818689999995" blue="0.77419835329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">미니어처 말은 어깨까지의 높이가 34인치(86cm)보다 커서는 안 되기 때문에 작은 조랑말보다도 작다. 그리고 완전히 자란 후의 체중이 150~250파운드(68~113kg)여야 한다. 일부 미니어처 말은 조랑말처럼 보이기도 하지만, 미니어처 말 사육자의 최종 목표는 정말로 작은 말을 만드는 것이다. 즉, 외관은 일반 말과 동일하지만 크기는 미니어처 사이즈의 말을 원하는 것이다. 따라서 미니어처 말은 목이나 배가 두꺼워서는 안 되며, 다리도 완전히 짧아서도 안 된다.오늘날, 미니어처 말은 혈통 있는 말로 길러지고 있다. 미니어처 말 중에서도 클럽 호스 유형의 경우 넓은 가슴과 근육질의 다리를 가지고 있는 반면, 지능형은 앞머리가 약간 들어간 동그란 얼굴에 연약한 주둥이, 커다란 눈, 얇은 몸체를 가지고 있다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -386,7 +391,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LCx-wV-DC6">
                                 <rect key="frame" x="20" y="533" width="374" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87563818689999995" blue="0.77419835329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">앞다리에서 발굽까지의 거리가 147cm미만인 말을 조랑말이라 한다. 대체로 조랑말은 갈기가 두껍고 털이 많으며 짧은 다리와 넓적한 몸통, 두꺼운 목, 그리고 몸에 비해 상대적으로 큰 머리를 가졌다. 또한 서식지의 기후와 풍토에 적응을 잘해 힘이 좋고 인내심이 강하다.야생상태에서 가축으로 길드여진 이후, 조랑말은 다양한 분야에서 인류에게 도움을 준다. 체구가 작은 것에 비해 힘과 지구력이 좋아 전쟁과 물자수송, 농경, 석탄 채굴, 우편배달 등에서 실력을 과시해 왔다.조랑말은 순치만 잘되면 사람과도 쉽게 친해지고 유순해지기 때문에 최근에는 재활승마 및 시각장애인 안내에서도 각광을 받고 있다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -458,7 +463,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZX-eh-yC2">
                                 <rect key="frame" x="20" y="533" width="374" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87563818689999995" blue="0.77419835329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">서러브레드종(Thoroughbred)은 현재 경주마의 거의 대부분을 차지하고 있으며, 오로지 경주마로서만 개량된 쿼터호스와 함께 세계에서 가장 빠르고 몸이 잘 발달된 세련된 품종이다. 17세기 영국에서 경주 능력이 우수한 말을 개량 발굴하기 위해 영국 재래 암말에 아랍 수말을 교배시켜 만든 품종으로, 300여 년간 경주 능력이 우수한 말끼리 교배시켜 번식해왔다. 
 
 작은 머리와 두툼한 가슴, 곧은 등을 가졌고, 다리는 길고 오랫동안 쉽게 걸을 수 있도록 짧은 뼈로 되어 있다. 특히 관절은 잘 발달되어 있다. 피부는 얇고 혈관이 비쳐 보인다. 눈은 커다랗게 둥글고 밝으며 귀는 약간 길고, 콧구멍은 크고 목은 곧고 가늘다. 엉덩이는 경사진 것도 있지만, 수평에 가까운 것이 많다. 털 색깔은 보통 적갈색이지만 극히 드물게는 검은색이나 회색인 것도 있으며 체고는 160 cm 내외 체중은 500 kg 전후다.</string>
@@ -503,7 +508,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-Fb-85O">
                                 <rect key="frame" x="20" y="533" width="374" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87563818689999995" blue="0.77419835329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">샤이어(shire)는 영국 원산의 말 품종으로, 만마(輓馬), 즉 짐말으로 개량되었다. 현재는 삼림 순찰, 승마 등에도 이용된다. 털 빛깔은 대개 검은색이거나 회색, 갈색이다. 현존하는 말 품종 가운데 가장 거대한 크기를 가지고 있는데, 보통 어깨높이가 1.7m 이상이고 몸무게는 910kg를 넘는다. 키 1.9m에 몸무게 1.1t에 이르는 것도 있을 정도로 거대하다.샤이어는 서러브레드 같은 경주용 말과는 달리 무언가를 끄는 데에 적합하며 힘이 강하고 지구력이 높으며 성격이 온순하고 착하며 참을성이 좋다. 
 
 
@@ -864,6 +869,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="004-horse.png" width="384" height="384"/>
+        <image name="006-horse" width="512" height="512"/>
+        <image name="008-horse" width="512" height="512"/>
+        <image name="009-horse" width="512" height="512"/>
         <image name="horse1" width="350" height="250"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="mic" catalog="system" width="108" height="128"/>
