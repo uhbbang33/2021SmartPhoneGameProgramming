@@ -8,6 +8,7 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
     var element = NSString()
     
     var bsshNm = NSMutableString()
+    var BSSHNM = NSMutableString()
     
     @IBOutlet var horseBackRidingTableView: UITableView!
     
@@ -73,13 +74,16 @@ class HorseBackRidingTableViewController: UITableViewController, XMLParserDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "SegueToMapViewController" {
+        if segue.identifier == "SegueToDetail" {
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
                 
-                if let mapViewController = segue.destination as? DetailHorseBackRidingViewController
+               // BSSHNM = (posts.object(at: indexPath?.row)!) as AnyObject).value(forKey: "bsshNm") as! NSMutableString
+                
+                if let detailTableViewController = segue.destination as? DetailTableViewController
                 {
-                    mapViewController.bsshNm = cell.textLabel?.text as! NSMutableString
+                    detailTableViewController.url = url
+                    detailTableViewController.bsshNm = cell.textLabel?.text as! NSMutableString
                 }
             }
         }

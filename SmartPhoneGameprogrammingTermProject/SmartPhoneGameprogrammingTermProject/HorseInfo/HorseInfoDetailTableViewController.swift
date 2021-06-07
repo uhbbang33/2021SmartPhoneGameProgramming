@@ -1,6 +1,12 @@
 import UIKit
+import QuartzCore
 
 class HorseInfoDetailTableViewController: UITableViewController, XMLParserDelegate {
+    //private var emitter: CAEmitterLayer!
+    
+//    overriade class var layerClass: AnyClass {
+//        return CAEmitterLayer.self
+//    }
     
     @IBOutlet var detailTableView: UITableView!
     

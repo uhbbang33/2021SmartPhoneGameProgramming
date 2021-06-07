@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10C5076266E52190087DEB9 /* png in Resources */ = {isa = PBXBuildFile; fileRef = A10C5075266E52190087DEB9 /* png */; };
 		A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8A2667E13A001E8383 /* SnowfallChart.swift */; };
 		A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8B2667E13A001E8383 /* TemperatureChart.swift */; };
 		A199FE8F2667E13A001E8383 /* PrecipitationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */; };
@@ -35,6 +34,11 @@
 		A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC6218266011E100AB3D1D /* ponyController.swift */; };
 		A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */; };
 		A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */; };
+		A1D7BCEC266EA85300F3CD39 /* HorseLikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7BCEB266EA85300F3CD39 /* HorseLikeTableViewController.swift */; };
+		A1D7BCEE266EA89500F3CD39 /* Horse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7BCED266EA89500F3CD39 /* Horse.swift */; };
+		A1D7BCF0266EA8DB00F3CD39 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7BCEF266EA8DB00F3CD39 /* SampleData.swift */; };
+		A1D7BCF2266EAC5E00F3CD39 /* HorseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7BCF1266EAC5E00F3CD39 /* HorseTableViewCell.swift */; };
+		A1D7BCF4266EB0A500F3CD39 /* HorseRatingDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7BCF3266EB0A500F3CD39 /* HorseRatingDetailsTableViewController.swift */; };
 		A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2C265971030056E1B5 /* 미니어처.png */; };
 		A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E2E2659710C0056E1B5 /* 샤이어.png */; };
 		A1D86E31265971170056E1B5 /* 포니.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D86E30265971170056E1B5 /* 포니.png */; };
@@ -82,10 +86,17 @@
 		A1F269E3264A6ED600A41B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E2264A6ED600A41B21 /* Assets.xcassets */; };
 		A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */; };
 		A1FBE06D265BDC8100E278E3 /* 서러브레드.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FBE06C265BDC8100E278E3 /* 서러브레드.png */; };
+		A1FC1CB5266E6BC400824DEF /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC1CB4266E6BC400824DEF /* DetailTableViewController.swift */; };
+		A1FC1CB7266E73AF00824DEF /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CB6266E73AF00824DEF /* particle.png */; };
+		A1FC1CBE266E7DA000824DEF /* 5Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CB9266E7D9F00824DEF /* 5Stars.png */; };
+		A1FC1CBF266E7DA000824DEF /* 2Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CBA266E7D9F00824DEF /* 2Stars.png */; };
+		A1FC1CC0266E7DA000824DEF /* 1Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CBB266E7D9F00824DEF /* 1Stars.png */; };
+		A1FC1CC1266E7DA000824DEF /* 4Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CBC266E7DA000824DEF /* 4Stars.png */; };
+		A1FC1CC2266E7DA000824DEF /* 3Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1CBD266E7DA000824DEF /* 3Stars.png */; };
+		A1FC1CC4266E7DD800824DEF /* StarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC1CC3266E7DD800824DEF /* StarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A10C5075266E52190087DEB9 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; name = png; path = "../../../../../../Downloads/2219003-horse-riding/png"; sourceTree = "<group>"; };
 		A199FE8A2667E13A001E8383 /* SnowfallChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowfallChart.swift; sourceTree = "<group>"; };
 		A199FE8B2667E13A001E8383 /* TemperatureChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureChart.swift; sourceTree = "<group>"; };
 		A199FE8C2667E13A001E8383 /* PrecipitationChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationChart.swift; sourceTree = "<group>"; };
@@ -112,6 +123,11 @@
 		A1CC6218266011E100AB3D1D /* ponyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ponyController.swift; sourceTree = "<group>"; };
 		A1CE3E41265BD97D003DE136 /* HorseInfoDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoDetailTableViewController.swift; sourceTree = "<group>"; };
 		A1CE3E42265BD97D003DE136 /* HorseInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseInfoTableViewController.swift; sourceTree = "<group>"; };
+		A1D7BCEB266EA85300F3CD39 /* HorseLikeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseLikeTableViewController.swift; sourceTree = "<group>"; };
+		A1D7BCED266EA89500F3CD39 /* Horse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horse.swift; sourceTree = "<group>"; };
+		A1D7BCEF266EA8DB00F3CD39 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		A1D7BCF1266EAC5E00F3CD39 /* HorseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseTableViewCell.swift; sourceTree = "<group>"; };
+		A1D7BCF3266EB0A500F3CD39 /* HorseRatingDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseRatingDetailsTableViewController.swift; sourceTree = "<group>"; };
 		A1D86E2C265971030056E1B5 /* 미니어처.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "미니어처.png"; sourceTree = "<group>"; };
 		A1D86E2E2659710C0056E1B5 /* 샤이어.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "샤이어.png"; sourceTree = "<group>"; };
 		A1D86E30265971170056E1B5 /* 포니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "포니.png"; sourceTree = "<group>"; };
@@ -162,6 +178,14 @@
 		A1F269E5264A6ED600A41B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F269E7264A6ED600A41B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FBE06C265BDC8100E278E3 /* 서러브레드.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "서러브레드.png"; sourceTree = "<group>"; };
+		A1FC1CB4266E6BC400824DEF /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		A1FC1CB6266E73AF00824DEF /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		A1FC1CB9266E7D9F00824DEF /* 5Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5Stars.png; sourceTree = "<group>"; };
+		A1FC1CBA266E7D9F00824DEF /* 2Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2Stars.png; sourceTree = "<group>"; };
+		A1FC1CBB266E7D9F00824DEF /* 1Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Stars.png; sourceTree = "<group>"; };
+		A1FC1CBC266E7DA000824DEF /* 4Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4Stars.png; sourceTree = "<group>"; };
+		A1FC1CBD266E7DA000824DEF /* 3Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Stars.png; sourceTree = "<group>"; };
+		A1FC1CC3266E7DD800824DEF /* StarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +222,6 @@
 		A12139282655315F00772963 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A10C5075266E52190087DEB9 /* png */,
 				A10E7CD7266E5F5F004B07B2 /* iconimage */,
 				A1FBE06C265BDC8100E278E3 /* 서러브레드.png */,
 				A1D86E2C265971030056E1B5 /* 미니어처.png */,
@@ -273,11 +296,25 @@
 			path = HorseInfo;
 			sourceTree = "<group>";
 		};
+		A1D7BCEA266EA82C00F3CD39 /* Ratings */ = {
+			isa = PBXGroup;
+			children = (
+				A1D7BCEB266EA85300F3CD39 /* HorseLikeTableViewController.swift */,
+				A1D7BCED266EA89500F3CD39 /* Horse.swift */,
+				A1D7BCEF266EA8DB00F3CD39 /* SampleData.swift */,
+				A1D7BCF1266EAC5E00F3CD39 /* HorseTableViewCell.swift */,
+				A1D7BCF3266EB0A500F3CD39 /* HorseRatingDetailsTableViewController.swift */,
+				A1FC1CC3266E7DD800824DEF /* StarTableViewController.swift */,
+			);
+			path = Ratings;
+			sourceTree = "<group>";
+		};
 		A1EAAC9C2669A72800E818FC /* HorseBackRidingInfo */ = {
 			isa = PBXGroup;
 			children = (
 				A1EAAC9D2669A74E00E818FC /* HorseBackRidingTableViewController.swift */,
 				A1EAACA12669A84C00E818FC /* DetailHorseBackRidingViewController.swift */,
+				A1FC1CB4266E6BC400824DEF /* DetailTableViewController.swift */,
 			);
 			path = HorseBackRidingInfo;
 			sourceTree = "<group>";
@@ -367,6 +404,8 @@
 		A1F269D8264A6ED500A41B21 /* SmartPhoneGameprogrammingTermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1D7BCEA266EA82C00F3CD39 /* Ratings */,
+				A1FC1CB6266E73AF00824DEF /* particle.png */,
 				A1EAAC9C2669A72800E818FC /* HorseBackRidingInfo */,
 				A199FEA82667E198001E8383 /* weather */,
 				A1F0480F2667CC5B0020DFE1 /* HorseScore */,
@@ -380,6 +419,11 @@
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
 				A1F269E7264A6ED600A41B21 /* Info.plist */,
+				A1FC1CBB266E7D9F00824DEF /* 1Stars.png */,
+				A1FC1CBA266E7D9F00824DEF /* 2Stars.png */,
+				A1FC1CBD266E7DA000824DEF /* 3Stars.png */,
+				A1FC1CBC266E7DA000824DEF /* 4Stars.png */,
+				A1FC1CB9266E7D9F00824DEF /* 5Stars.png */,
 				A1CC620C26600CA800AB3D1D /* CellAnimation */,
 				A12139282655315F00772963 /* Image */,
 				A1CC6213266011A400AB3D1D /* pageControl */,
@@ -444,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FC1CBE266E7DA000824DEF /* 5Stars.png in Resources */,
 				A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */,
 				A1E58C1B26627A4D00223E3E /* horse11.png in Resources */,
 				A1ED6CDE265646AD0044CBBB /* shire4.jpg in Resources */,
@@ -455,9 +500,10 @@
 				A1E58C1C26627A4D00223E3E /* horse4.png in Resources */,
 				A1ED6CD4265646030044CBBB /* thoroughbred4.jpg in Resources */,
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
+				A1FC1CB7266E73AF00824DEF /* particle.png in Resources */,
 				A1ED6CD6265646030044CBBB /* thoroughbred5.jpg in Resources */,
-				A10C5076266E52190087DEB9 /* png in Resources */,
 				A1EAAC952669A31300E818FC /* Title.png in Resources */,
+				A1FC1CC0266E7DA000824DEF /* 1Stars.png in Resources */,
 				A1E58C1E26627A4D00223E3E /* horse10.png in Resources */,
 				A1E58C2126627A4D00223E3E /* horse7.png in Resources */,
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
@@ -475,14 +521,17 @@
 				A1ED6CE2265646AD0044CBBB /* shire1.jpg in Resources */,
 				A1E58C1D26627A4D00223E3E /* horse12.png in Resources */,
 				A1ED6CDF265646AD0044CBBB /* shire3.jpg in Resources */,
+				A1FC1CBF266E7DA000824DEF /* 2Stars.png in Resources */,
 				A1E58C1826627A4D00223E3E /* horse8.png in Resources */,
 				A1E58C1626627A4D00223E3E /* horse5.png in Resources */,
 				A1D86E31265971170056E1B5 /* 포니.png in Resources */,
 				A1F269E1264A6ED500A41B21 /* Main.storyboard in Resources */,
 				A1ED6CC9265645870044CBBB /* pony3.jpg in Resources */,
 				A1ED6CD5265646030044CBBB /* thoroughbred3.jpg in Resources */,
+				A1FC1CC2266E7DA000824DEF /* 3Stars.png in Resources */,
 				A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */,
 				A1ED6CD7265646030044CBBB /* thoroughbred1.jpg in Resources */,
+				A1FC1CC1266E7DA000824DEF /* 4Stars.png in Resources */,
 				A1ED6CE0265646AD0044CBBB /* shire5.jpg in Resources */,
 				A1E58C1726627A4D00223E3E /* horse2.png in Resources */,
 				A1ED6CE1265646AD0044CBBB /* shire2.jpg in Resources */,
@@ -497,22 +546,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A199FE942667E146001E8383 /* DoubleExtension.swift in Sources */,
+				A1FC1CC4266E7DD800824DEF /* StarTableViewController.swift in Sources */,
 				A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */,
 				A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */,
 				A1EAAC9E2669A74E00E818FC /* HorseBackRidingTableViewController.swift in Sources */,
 				A199FEA52667E192001E8383 /* SnowfallTab.swift in Sources */,
 				A1EAACA22669A84C00E818FC /* DetailHorseBackRidingViewController.swift in Sources */,
+				A1D7BCEC266EA85300F3CD39 /* HorseLikeTableViewController.swift in Sources */,
 				A1F269DE264A6ED500A41B21 /* ViewController.swift in Sources */,
 				A1CC6215266011BB00AB3D1D /* shireController.swift in Sources */,
 				A1CE3E46265BD97D003DE136 /* HorseInfoDetailTableViewController.swift in Sources */,
 				A1ED6CF0265649D30044CBBB /* TextViewConerRound.swift in Sources */,
+				A1D7BCF4266EB0A500F3CD39 /* HorseRatingDetailsTableViewController.swift in Sources */,
 				A1F048112667CCBA0020DFE1 /* HorseScoreGraphViewController.swift in Sources */,
 				A199FEA02667E186001E8383 /* StationInfo.swift in Sources */,
+				A1FC1CB5266E6BC400824DEF /* DetailTableViewController.swift in Sources */,
+				A1D7BCEE266EA89500F3CD39 /* Horse.swift in Sources */,
 				A199FE9D2667E151001E8383 /* WeatherInformation.swift in Sources */,
 				A199FEA12667E186001E8383 /* StationHeader.swift in Sources */,
 				A1CC6217266011D100AB3D1D /* miniatureController.swift in Sources */,
 				A1CC621026600D3900AB3D1D /* UITableView+Ext.swift in Sources */,
 				A199FE8F2667E13A001E8383 /* PrecipitationChart.swift in Sources */,
+				A1D7BCF2266EAC5E00F3CD39 /* HorseTableViewCell.swift in Sources */,
 				A199FE952667E146001E8383 /* MapView.swift in Sources */,
 				A199FE9B2667E151001E8383 /* WeatherStation.swift in Sources */,
 				A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */,
@@ -520,6 +575,7 @@
 				A199FEA62667E192001E8383 /* TemperatureTab.swift in Sources */,
 				A1F269DA264A6ED500A41B21 /* AppDelegate.swift in Sources */,
 				A1F269DC264A6ED500A41B21 /* SceneDelegate.swift in Sources */,
+				A1D7BCF0266EA8DB00F3CD39 /* SampleData.swift in Sources */,
 				A199FE932667E146001E8383 /* ContentView.swift in Sources */,
 				A199FE9C2667E151001E8383 /* DayInfo.swift in Sources */,
 				A1CC62122660119300AB3D1D /* thoroughbredController.swift in Sources */,
