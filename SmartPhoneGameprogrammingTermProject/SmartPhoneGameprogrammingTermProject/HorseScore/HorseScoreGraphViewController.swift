@@ -83,7 +83,7 @@ struct HospitalInfo: View
                 Image(systemName: "gamecontroller")
                 Text("개인 성적 그래프")
             })
-        }.frame(width: 400, height: 300)
+        }.frame(width: 300, height: 300)
     }
 }
 
@@ -108,6 +108,9 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
     var ord1CntY = NSMutableString()   // 최근 1착
     var ord2CntY = NSMutableString()   // 최근 2착
     //var winRateY = NSMutableString()   // 최근 승리
+    
+    let ScreenWidth = UIScreen.main.bounds.size.width
+    let ScreenHeight = UIScreen.main.bounds.size.height
     
     func beginParsing()
     {
@@ -208,12 +211,26 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
         beginParsing()
         updateSwiftUI()
         
-        UIView.animate(withDuration: 1.5, delay: 0.5,
+        UIView.animate(withDuration: 1.0, delay: 1.0,
                                    usingSpringWithDamping: 0.3,
                                    initialSpringVelocity: 0.5,
                                    options: [], animations: {
             self.titleLabel.center.x += self.view.bounds.width
             }, completion: nil)
+
+        let startX: CGFloat = ScreenWidth - 100
+        let startY: CGFloat = 0
+        let endY: CGFloat = ScreenHeight + 300
+        
+        
+        let stars = StardustView(frame: CGRect(x: ScreenWidth, y: startY, width: 25, height: 25))
+        self.view.addSubview(stars)
+        self.view.sendSubviewToBack(_: stars)
+        
+        UIView.animate(withDuration: 2.0, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            stars.center = CGPoint(x: startX, y: endY)
+        }, completion: {(value: Bool) in stars.removeFromSuperview()})
+        
     }
     
     func updateSwiftUI()
