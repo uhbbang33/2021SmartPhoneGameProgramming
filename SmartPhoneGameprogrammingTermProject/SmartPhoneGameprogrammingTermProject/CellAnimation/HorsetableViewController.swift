@@ -13,8 +13,19 @@ class HorsetableViewController: UITableViewController {
     @IBOutlet weak var miniatureicon: UIImageView!
     @IBOutlet weak var ponyicon: UIImageView!
     
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        audioController.playerEffect(name: SoundFlip)
         
         setupImageViewAnimation()
         iconImage.animationRepeatCount = 10
