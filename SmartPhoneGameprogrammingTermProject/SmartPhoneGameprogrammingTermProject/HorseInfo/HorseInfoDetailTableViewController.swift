@@ -183,5 +183,20 @@ class HorseInfoDetailTableViewController: UITableViewController, XMLParserDelega
         cell.detailTextLabel?.text = posts[indexPath.row]
         return cell
     }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+//    {
+//        if segue.identifier == "SegueToLikeHorse" {
+//            if let cell = sender as? UITableViewCell {
+//                let indexPath = tableView.indexPath(for: cell)
+//                
+//                if let horseRatingDetailsTableViewController = segue.destination as? HorseRatingDetailsTableViewController{
+//                    let hrName_utf8 = hrName.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+//                    horseRatingDetailsTableViewController.nameTextField.text = hrName_utf8 as String
+//                }
+//            }
+//        }
+//        
+//    }
 }
 

@@ -577,7 +577,7 @@
             <objects>
                 <tableViewController id="pdd-IH-lm7" customClass="HorseLikeTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jHD-Zr-jj8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -624,7 +624,7 @@
                     <navigationItem key="navigationItem" title="즐겨찾기" id="MwX-oL-qAW">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Nzi-be-DRL">
                             <connections>
-                                <segue destination="kIz-W5-47G" kind="presentation" id="XZ3-UV-bmZ"/>
+                                <segue destination="kIz-W5-47G" kind="presentation" identifier="SegueToAdd" id="XZ3-UV-bmZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -655,9 +655,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-e0-NF4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="369" height="34"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -948,7 +948,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="즐겨찾기 추가"/>
                                 <connections>
-                                    <segue destination="pdd-IH-lm7" kind="show" id="aFd-xB-ijG"/>
+                                    <segue destination="pdd-IH-lm7" kind="show" id="yJB-6N-OaG"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -1040,7 +1040,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lAf-xJ-moS"/>
-        <segue reference="ear-2F-20F"/>
+        <segue reference="yJB-6N-OaG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="004-horse.png" width="384" height="384"/>
