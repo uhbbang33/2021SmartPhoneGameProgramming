@@ -93,6 +93,12 @@
 		A1F269E3264A6ED600A41B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E2264A6ED600A41B21 /* Assets.xcassets */; };
 		A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */; };
 		A1FBE06D265BDC8100E278E3 /* 서러브레드.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FBE06C265BDC8100E278E3 /* 서러브레드.png */; };
+		A1FD991A266F0DE500DE8D4F /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD9919266F0DE500DE8D4F /* AudioController.swift */; };
+		A1FD9920266F140700DE8D4F /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1FD991B266F140700DE8D4F /* ding.wav */; };
+		A1FD9921266F140700DE8D4F /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1FD991C266F140700DE8D4F /* win.wav */; };
+		A1FD9922266F140700DE8D4F /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1FD991D266F140700DE8D4F /* wrong.wav */; };
+		A1FD9924266F140700DE8D4F /* cardFlip1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1FD991F266F140700DE8D4F /* cardFlip1.wav */; };
+		A1FD993C266F14B400DE8D4F /* chip.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1FD993B266F14B400DE8D4F /* chip.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +190,12 @@
 		A1F269E5264A6ED600A41B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F269E7264A6ED600A41B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FBE06C265BDC8100E278E3 /* 서러브레드.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "서러브레드.png"; sourceTree = "<group>"; };
+		A1FD9919266F0DE500DE8D4F /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioController.swift; path = ../../../../jykim/BlackJack/BlackJack/AudioController.swift; sourceTree = "<group>"; };
+		A1FD991B266F140700DE8D4F /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ding.wav; path = "../../../../jykim/BlackJack 복사본/BlackJack/sounds/ding.wav"; sourceTree = "<group>"; };
+		A1FD991C266F140700DE8D4F /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../../jykim/BlackJack 복사본/BlackJack/sounds/win.wav"; sourceTree = "<group>"; };
+		A1FD991D266F140700DE8D4F /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = wrong.wav; path = "../../../../jykim/BlackJack 복사본/BlackJack/sounds/wrong.wav"; sourceTree = "<group>"; };
+		A1FD991F266F140700DE8D4F /* cardFlip1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cardFlip1.wav; path = "../../../../jykim/BlackJack 복사본/BlackJack/sounds/cardFlip1.wav"; sourceTree = "<group>"; };
+		A1FD993B266F14B400DE8D4F /* chip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = chip.wav; path = ../../../../../.Trash/chip.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +425,12 @@
 				A1F269E2264A6ED600A41B21 /* Assets.xcassets */,
 				A1F269E4264A6ED600A41B21 /* LaunchScreen.storyboard */,
 				A1F269E7264A6ED600A41B21 /* Info.plist */,
+				A1FD9919266F0DE500DE8D4F /* AudioController.swift */,
+				A1FD991F266F140700DE8D4F /* cardFlip1.wav */,
+				A1FD993B266F14B400DE8D4F /* chip.wav */,
+				A1FD991B266F140700DE8D4F /* ding.wav */,
+				A1FD991C266F140700DE8D4F /* win.wav */,
+				A1FD991D266F140700DE8D4F /* wrong.wav */,
 				A1CC620C26600CA800AB3D1D /* CellAnimation */,
 				A12139282655315F00772963 /* Image */,
 				A1CC6213266011A400AB3D1D /* pageControl */,
@@ -478,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D86E2F2659710C0056E1B5 /* 샤이어.png in Resources */,
+				A1FD9924266F140700DE8D4F /* cardFlip1.wav in Resources */,
 				A134B1B4266F04CC00D1B796 /* 4Stars.png in Resources */,
 				A1E58C1B26627A4D00223E3E /* horse11.png in Resources */,
 				A1ED6CDE265646AD0044CBBB /* shire4.jpg in Resources */,
@@ -499,7 +518,9 @@
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
 				A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */,
 				A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */,
+				A1FD993C266F14B400DE8D4F /* chip.wav in Resources */,
 				A1ED6CEA265647070044CBBB /* miniature3.jpg in Resources */,
+				A1FD9921266F140700DE8D4F /* win.wav in Resources */,
 				A1685B29266E86D600168208 /* horse2particle.png in Resources */,
 				A1F269E6264A6ED600A41B21 /* LaunchScreen.storyboard in Resources */,
 				A199FE9A2667E151001E8383 /* weather-data.csv in Resources */,
@@ -513,11 +534,13 @@
 				A1ED6CE2265646AD0044CBBB /* shire1.jpg in Resources */,
 				A1E58C1D26627A4D00223E3E /* horse12.png in Resources */,
 				A1ED6CDF265646AD0044CBBB /* shire3.jpg in Resources */,
+				A1FD9920266F140700DE8D4F /* ding.wav in Resources */,
 				A1E58C1826627A4D00223E3E /* horse8.png in Resources */,
 				A1E58C1626627A4D00223E3E /* horse5.png in Resources */,
 				A1D86E31265971170056E1B5 /* 포니.png in Resources */,
 				A1F269E1264A6ED500A41B21 /* Main.storyboard in Resources */,
 				A1ED6CC9265645870044CBBB /* pony3.jpg in Resources */,
+				A1FD9922266F140700DE8D4F /* wrong.wav in Resources */,
 				A134B1B1266F04CC00D1B796 /* 3Stars.png in Resources */,
 				A1ED6CD5265646030044CBBB /* thoroughbred3.jpg in Resources */,
 				A1D86E2D265971030056E1B5 /* 미니어처.png in Resources */,
@@ -571,6 +594,7 @@
 				A16555C6266F006A0086ACB4 /* StardustView.swift in Sources */,
 				A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */,
 				A1CE3E47265BD97D003DE136 /* HorseInfoTableViewController.swift in Sources */,
+				A1FD991A266F0DE500DE8D4F /* AudioController.swift in Sources */,
 				A1CC6219266011E100AB3D1D /* ponyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

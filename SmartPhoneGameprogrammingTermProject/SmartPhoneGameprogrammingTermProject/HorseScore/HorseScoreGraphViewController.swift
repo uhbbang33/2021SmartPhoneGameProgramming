@@ -112,6 +112,16 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
     let ScreenWidth = UIScreen.main.bounds.size.width
     let ScreenHeight = UIScreen.main.bounds.size.height
     
+    
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     func beginParsing()
     {
         posts = []
@@ -230,6 +240,9 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
         UIView.animate(withDuration: 2.0, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
             stars.center = CGPoint(x: startX, y: endY)
         }, completion: {(value: Bool) in stars.removeFromSuperview()})
+        
+        audioController.playerEffect(name: SoundWin)
+
         
     }
     

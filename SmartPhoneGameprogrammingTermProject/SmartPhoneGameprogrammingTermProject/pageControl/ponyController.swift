@@ -13,12 +13,23 @@ class ponyController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     
     
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     var pageImages: [UIImage] = []
         
         var pageViews: [UIImageView?] = []
 
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            audioController.playerEffect(name: SoundChip)
             
             pageImages = [UIImage(named: "pony1.jpg")!,
                           UIImage(named: "pony2.jpg")!,
