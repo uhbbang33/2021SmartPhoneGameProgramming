@@ -17,7 +17,7 @@ class ponyController: UIViewController, UIScrollViewDelegate {
 
     required init?(coder aDecoder: NSCoder) {
         audioController = AudioController()
-        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
         
         super.init(coder: aDecoder)
     }

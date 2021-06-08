@@ -17,7 +17,7 @@ class HorsetableViewController: UITableViewController {
 
     required init?(coder aDecoder: NSCoder) {
         audioController = AudioController()
-        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
         
         super.init(coder: aDecoder)
     }
@@ -28,20 +28,20 @@ class HorsetableViewController: UITableViewController {
         audioController.playerEffect(name: SoundFlip)
         
         setupImageViewAnimation()
-        iconImage.animationRepeatCount = 10
+        //iconImage.animationRepeatCount = 10
         iconImage.animationDuration = 1.0
         iconImage.startAnimating()
         
-        shireicon.animationRepeatCount = 10
-        shireicon.animationDuration = 1.2
+        //shireicon.animationRepeatCount = 10
+        shireicon.animationDuration = 1.1
         shireicon.startAnimating()
         
-        miniatureicon.animationRepeatCount = 10
-        miniatureicon.animationDuration = 1.4
+        //miniatureicon.animationRepeatCount = 10
+        miniatureicon.animationDuration = 1.2
         miniatureicon.startAnimating()
         
-        ponyicon.animationRepeatCount = 10
-        ponyicon.animationDuration = 1.6
+        //ponyicon.animationRepeatCount = 10
+        ponyicon.animationDuration = 1.3
         ponyicon.startAnimating()
     }
     

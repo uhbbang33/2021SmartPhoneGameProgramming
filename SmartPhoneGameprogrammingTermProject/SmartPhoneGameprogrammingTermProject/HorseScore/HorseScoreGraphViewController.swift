@@ -117,7 +117,7 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
 
     required init?(coder aDecoder: NSCoder) {
         audioController = AudioController()
-        audioController.preloadAudioEffect(audioFileName: AudioEffectFiles)
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
         
         super.init(coder: aDecoder)
     }
@@ -220,6 +220,9 @@ class HorseScoreGraphViewController: UIViewController, XMLParserDelegate {
         super.viewDidLoad()
         beginParsing()
         updateSwiftUI()
+        
+        audioController.playerEffect(name: SoundFlip)
+
         
         UIView.animate(withDuration: 1.0, delay: 1.0,
                                    usingSpringWithDamping: 0.3,

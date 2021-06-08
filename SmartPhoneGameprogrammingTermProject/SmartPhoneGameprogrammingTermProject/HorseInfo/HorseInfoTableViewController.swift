@@ -16,12 +16,22 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
     
     var keyword = ""
     var keyword_utf8 = ""
-
+    @IBOutlet weak var horseImage: UIImageView!
+    
     @IBOutlet weak var horseInfoTBData: UITableView!
     
     @IBOutlet weak var searchKeyword: UITextField!
     
     @IBOutlet weak var micButton: UIBarButtonItem!
+    
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
     
     @IBAction func micButtonPressed(_ sender: Any) {
         if audioEngine.isRunning{
@@ -47,13 +57,30 @@ class HorseInfoTableViewController: UITableViewController, XMLParserDelegate {
     
     private let audioEngine = AVAudioEngine()
     
+    override func viewWillAppear(_ animated: Bool)
+    {
+        horseImage.alpha = 0.0
+    }
+
+    override func viewDidAppear(_ animated: Bool)
+    {
+        UIView.animate(withDuration: 1.0, delay: 0.1, options: [],
+            animations: {
+                self.horseImage.alpha = 1.0
+            }, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
         authorizeSR()
+        
+        audioController.playerEffect(name: SoundFlip)
+
     }
     
-    let url = "http://apis.data.go.kr/B551015/API8/raceHorseInfo?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=20&pageNo=1&hr_name="
+    let url = "http://apis.data.go.kr/B551015/API8/raceHorseInfo?serviceKey=cTaPbuD%2BWjq4Q5oN5t7p8xIL%2BLnP8TUQWU5tQZfbIglvfqQ09w%2FOQ6IqOsKBTuJQCNtUMZnOl3zPnN99a5dnVA%3D%3D&numOfRows=300&pageNo=1&hr_name="
     
     func beginParsing()
     {

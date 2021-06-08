@@ -35,6 +35,8 @@ class HorseInfoDetailTableViewController: UITableViewController, XMLParserDelega
     var moHrName = NSMutableString()
     var moHrNo = NSMutableString()
     
+    
+    
     func beginParsing()
     {
         posts = []

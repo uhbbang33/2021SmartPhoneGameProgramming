@@ -15,9 +15,21 @@ class HorseLikeTableViewController: UITableViewController {
     
     @IBOutlet var tb: UITableView!
     
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        audioController.playerEffect(name: SoundFlip)
+
     }
     
     @IBAction func cancelToHorsesViewController(segue: UIStoryboardSegue){

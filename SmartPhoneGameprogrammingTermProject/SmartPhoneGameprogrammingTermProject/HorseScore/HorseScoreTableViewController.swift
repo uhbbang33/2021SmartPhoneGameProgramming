@@ -21,6 +21,7 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet weak var mic: UIBarButtonItem!
     @IBOutlet weak var searchButton: UIBarButtonItem!
     
+    @IBOutlet weak var runImage: UIImageView!
     
     var horseName = NSMutableString()
     var horseNum = NSMutableString()
@@ -33,6 +34,16 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     var keyword_utf8 = ""
     
     var hrNum = ""
+    
+    var audioController: AudioController
+
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     
     @IBAction func micButtonPressed(_ sender: Any) {
         if audioEngine.isRunning{
@@ -63,6 +74,14 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
+        
+        setupImageViewAnimation()
+        //runImage.animationRepeatCount = 10
+        runImage.animationDuration = 1.0
+        runImage.startAnimating()
+        
+        audioController.playerEffect(name: SoundFlip)
+
     }
     
     func beginParsing()
@@ -202,4 +221,11 @@ class HorseScoreTableViewController: UITableViewController, XMLParserDelegate {
             }
         }
     }
+    
+    private func setupImageViewAnimation() {
+        runImage.animationImages = [#imageLiteral(resourceName: "horse1.png"), #imageLiteral(resourceName: "horse2.png"), #imageLiteral(resourceName: "horse3.png"), #imageLiteral(resourceName: "horse4.png"), #imageLiteral(resourceName: "horse5.png"), #imageLiteral(resourceName: "horse6.png"), #imageLiteral(resourceName: "horse7.png"), #imageLiteral(resourceName: "horse8.png"),#imageLiteral(resourceName: "horse9.png"), #imageLiteral(resourceName: "horse10.png"), #imageLiteral(resourceName: "horse11.png"), #imageLiteral(resourceName: "horse12.png")]
+
+    }
+    
+   
 }
