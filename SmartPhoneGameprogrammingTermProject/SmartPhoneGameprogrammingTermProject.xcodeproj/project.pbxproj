@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10C5076266E52190087DEB9 /* png in Resources */ = {isa = PBXBuildFile; fileRef = A10C5075266E52190087DEB9 /* png */; };
 		A16555C6266F006A0086ACB4 /* StardustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16555C5266F006A0086ACB4 /* StardustView.swift */; };
+		A16555C8266F03BE0086ACB4 /* png in Resources */ = {isa = PBXBuildFile; fileRef = A16555C7266F03BD0086ACB4 /* png */; };
 		A1685B29266E86D600168208 /* horse2particle.png in Resources */ = {isa = PBXBuildFile; fileRef = A1685B28266E86D600168208 /* horse2particle.png */; };
 		A199FE8D2667E13A001E8383 /* SnowfallChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8A2667E13A001E8383 /* SnowfallChart.swift */; };
 		A199FE8E2667E13A001E8383 /* TemperatureChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FE8B2667E13A001E8383 /* TemperatureChart.swift */; };
@@ -87,8 +87,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A10C5075266E52190087DEB9 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; name = png; path = "../../../../../../Downloads/2219003-horse-riding/png"; sourceTree = "<group>"; };
 		A16555C5266F006A0086ACB4 /* StardustView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StardustView.swift; sourceTree = "<group>"; };
+		A16555C7266F03BD0086ACB4 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
 		A1685B28266E86D600168208 /* horse2particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse2particle.png; sourceTree = "<group>"; };
 		A199FE8A2667E13A001E8383 /* SnowfallChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowfallChart.swift; sourceTree = "<group>"; };
 		A199FE8B2667E13A001E8383 /* TemperatureChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureChart.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		A12139282655315F00772963 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A10C5075266E52190087DEB9 /* png */,
+				A16555C7266F03BD0086ACB4 /* png */,
 				A10E7CD7266E5F5F004B07B2 /* iconimage */,
 				A1FBE06C265BDC8100E278E3 /* 서러브레드.png */,
 				A1D86E2C265971030056E1B5 /* 미니어처.png */,
@@ -462,10 +462,10 @@
 				A1ED6CD4265646030044CBBB /* thoroughbred4.jpg in Resources */,
 				A1ED6CD3265646030044CBBB /* thoroughbred2.jpg in Resources */,
 				A1ED6CD6265646030044CBBB /* thoroughbred5.jpg in Resources */,
-				A10C5076266E52190087DEB9 /* png in Resources */,
 				A1EAAC952669A31300E818FC /* Title.png in Resources */,
 				A1E58C1E26627A4D00223E3E /* horse10.png in Resources */,
 				A1E58C2126627A4D00223E3E /* horse7.png in Resources */,
+				A16555C8266F03BE0086ACB4 /* png in Resources */,
 				A1ED6CED265647070044CBBB /* miniature4.jpg in Resources */,
 				A1ED6CC8265645870044CBBB /* pony1.jpg in Resources */,
 				A1ED6CCA265645870044CBBB /* pony4.jpg in Resources */,
