@@ -45,6 +45,7 @@ class HorseRatingDetailsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "SaveHorseDetail"{
             horse = Horse(name: nameTextField.text!, rating: rating)
+            horsesData.append(Horse(name: nameTextField.text!, rating: rating))
         }
         
         if segue.identifier == "PickStar"{

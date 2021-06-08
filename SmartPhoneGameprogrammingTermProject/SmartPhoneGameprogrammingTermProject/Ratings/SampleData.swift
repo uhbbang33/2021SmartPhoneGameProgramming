@@ -7,8 +7,8 @@
 
 import Foundation
 
-let horsesData = [
-    Horse(name: "씽씽이", rating: 3),
-    Horse(name: "날썐이", rating: 1),
+var horsesData = [
+    Horse(name: "가가", rating: 3),
+    Horse(name: "가나다라", rating: 1),
     Horse(name: "날렵이", rating: 2)
 ]

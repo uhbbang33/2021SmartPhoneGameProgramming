@@ -24,6 +24,7 @@
 		A199FEA72667E192001E8383 /* PrecipitationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199FEA42667E192001E8383 /* PrecipitationTab.swift */; };
 		A199FEAB2667EF8B001E8383 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A199FEAA2667EF8B001E8383 /* WebKit.framework */; };
 		A199FEAC2667F850001E8383 /* HorseScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0480D2667CA0A0020DFE1 /* HorseScoreTableViewController.swift */; };
+		A1ABFBF6266EEB1B00A74F44 /* Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1ABFBF5266EEB1A00A74F44 /* Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3 */; };
 		A1CC620A26600CA200AB3D1D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620826600CA200AB3D1D /* Animator.swift */; };
 		A1CC620B26600CA200AB3D1D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620926600CA200AB3D1D /* Animations.swift */; };
 		A1CC620E26600D0700AB3D1D /* HorsetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */; };
@@ -113,6 +114,7 @@
 		A199FEA32667E192001E8383 /* TemperatureTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureTab.swift; sourceTree = "<group>"; };
 		A199FEA42667E192001E8383 /* PrecipitationTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationTab.swift; sourceTree = "<group>"; };
 		A199FEAA2667EF8B001E8383 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A1ABFBF5266EEB1A00A74F44 /* Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3"; sourceTree = "<group>"; };
 		A1CC620826600CA200AB3D1D /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		A1CC620926600CA200AB3D1D /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		A1CC620D26600D0700AB3D1D /* HorsetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorsetableViewController.swift; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 				A1FC1CBD266E7DA000824DEF /* 3Stars.png */,
 				A1FC1CBC266E7DA000824DEF /* 4Stars.png */,
 				A1FC1CB9266E7D9F00824DEF /* 5Stars.png */,
+				A1ABFBF5266EEB1A00A74F44 /* Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3 */,
 				A1CC620C26600CA800AB3D1D /* CellAnimation */,
 				A12139282655315F00772963 /* Image */,
 				A1CC6213266011A400AB3D1D /* pageControl */,
@@ -522,6 +525,7 @@
 				A1E58C1D26627A4D00223E3E /* horse12.png in Resources */,
 				A1ED6CDF265646AD0044CBBB /* shire3.jpg in Resources */,
 				A1FC1CBF266E7DA000824DEF /* 2Stars.png in Resources */,
+				A1ABFBF6266EEB1B00A74F44 /* Horse-Neigh-Quick-B-www.fesliyanstudios.com.mp3 in Resources */,
 				A1E58C1826627A4D00223E3E /* horse8.png in Resources */,
 				A1E58C1626627A4D00223E3E /* horse5.png in Resources */,
 				A1D86E31265971170056E1B5 /* 포니.png in Resources */,

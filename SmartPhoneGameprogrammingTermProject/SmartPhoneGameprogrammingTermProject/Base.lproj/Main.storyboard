@@ -628,6 +628,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tb" destination="jHD-Zr-jj8" id="f6o-wx-1r2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaw-0b-jO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -652,7 +655,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-e0-NF4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="369" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -689,18 +692,28 @@
                             <outlet property="delegate" destination="tif-gV-O3Y" id="gkw-F2-MPp"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="말 추가" id="CTd-DM-1Im">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="Crv-fY-O08">
                             <connections>
                                 <segue destination="ufd-s6-4lD" kind="unwind" unwindAction="cancelToHorsesViewControllerWithSegue:" id="aMd-7Y-a6t"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="MS8-t7-0Ba">
-                            <connections>
-                                <segue destination="ufd-s6-4lD" kind="unwind" identifier="SaveHorseDetail" unwindAction="saveToHorseDetailWithSegue:" id="qhn-qN-Qyl"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="done" id="MS8-t7-0Ba">
+                                <connections>
+                                    <segue destination="ufd-s6-4lD" kind="unwind" identifier="SaveHorseDetail" unwindAction="saveToHorseDetailWithSegue:" id="qhn-qN-Qyl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="c51-xx-cr8">
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="Viu-6s-JJC" id="6Dn-dj-fET"/>
+                                    <segue destination="JpL-5Q-T72" kind="show" id="lAf-xJ-moS"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameTextField" destination="MHd-e0-NF4" id="U9N-XM-GsZ"/>
                         <outlet property="ratingImageView" destination="qVV-RV-5ep" id="bhd-V2-Gk3"/>
@@ -820,7 +833,7 @@
             <objects>
                 <tableViewController id="JpL-5Q-T72" customClass="HorseInfoTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Msy-nG-rm7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -861,7 +874,7 @@
                     <navigationItem key="navigationItem" id="xW9-b5-aTW">
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="llx-Rf-lD1">
-                            <rect key="frame" x="102.5" y="5" width="200" height="34"/>
+                            <rect key="frame" x="102.5" y="11" width="200" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -894,7 +907,7 @@
             <objects>
                 <tableViewController id="TVV-p7-N9V" customClass="HorseInfoDetailTableViewController" customModule="SmartPhoneGameprogrammingTermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3E9-nz-x4B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -928,7 +941,18 @@
                             <outlet property="delegate" destination="TVV-p7-N9V" id="lRW-gp-c8p"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3bK-44-dog"/>
+                    <navigationItem key="navigationItem" id="3bK-44-dog">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="wRJ-h7-H5E">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lp5-T3-AqB">
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="즐겨찾기 추가"/>
+                                <connections>
+                                    <segue destination="pdd-IH-lm7" kind="show" id="aFd-xB-ijG"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailTableView" destination="3E9-nz-x4B" id="MCe-Dx-der"/>
                     </connections>
@@ -1014,6 +1038,10 @@
             <point key="canvasLocation" x="2821.739130434783" y="975"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lAf-xJ-moS"/>
+        <segue reference="ear-2F-20F"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="004-horse.png" width="384" height="384"/>
         <image name="006-horse" width="512" height="512"/>

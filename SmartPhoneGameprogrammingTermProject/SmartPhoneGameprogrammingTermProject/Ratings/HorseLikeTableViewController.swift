@@ -10,9 +10,10 @@ import UIKit
 class HorseLikeTableViewController: UITableViewController {
     var horses: [Horse] = horsesData
     
-    @IBOutlet weak var hrName: UILabel!
-    // var keyword = ""
-    //var keyword_utf8 = ""
+    var keyword = ""
+    var keyword_utf8 = ""
+    
+    @IBOutlet var tb: UITableView!
     
     
     override func viewDidLoad() {
@@ -63,9 +64,9 @@ class HorseLikeTableViewController: UITableViewController {
 //    {
 //        if segue.identifier == "SegueToDetail" {
 //            if let cell = sender as? UITableViewCell {
-//                let indexPath = tableView.indexPath(for: cell)
+//                //let indexPath = tableView.indexPath(for: cell)
 //
-//                keyword = hrName.text!
+//                keyword = tb.cellForRowAtIndexPath(sender.indexPath) as!
 //                keyword_utf8 = keyword.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
 //
 //                if let horseInfoDetailTableViewController = segue.destination as? HorseInfoDetailTableViewController{
@@ -73,8 +74,8 @@ class HorseLikeTableViewController: UITableViewController {
 //                }
 //            }
 //        }
-        
-    }
+//    }
+}
 
     /*
     // Override to support conditional editing of the table view.
